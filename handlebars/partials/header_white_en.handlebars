@@ -1,0 +1,37 @@
+<!-- s : header -->
+<header class="hdr--des">
+    <div class="top__bar">
+        <div class="container top__bar__wrapper">
+            <input type="text" placeholder="" id="search_input">
+            <a href="index-search.html" class="search__button" id="search_button"><span class="icon icon-search"></span> </a>
+            <div class="top__lan">
+                <a href="" class="top__lan__item" id="lan-ID">IND</a>
+                <a href="" class="top__lan__item" id="lan-EN">ENG</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom__bar bottom__bar--wht js__nav">
+        <div class="container bottom__bar__wrapper">
+            <div class="bottom__bar--left"><a href="index.html" class="hdr__logo__link"><img src="asset/img/logo-kg.png" alt="logo-kg.png" class="hdr__logo"></a></div>
+            <div class="bottom__bar--right menu">
+                <ul class="menu__list">
+                    {{#each menu_en}}
+                    <li class="menu__list__parent{{#eq title compare=../page}} menu__list__parent--active{{/eq}}">
+                        <a href="{{link}}">{{title}}</a> {{#if submenu}}
+                        <ul class="menu__sub">
+                            {{#each submenu}}
+                            <li class="menu__child{{#eq title compare=../../page}}menu__child--active{{/eq}}">
+                                <a href="{{link}}">{{title}}</a>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="js-nav-offset"></div>
+<!-- e : header -->

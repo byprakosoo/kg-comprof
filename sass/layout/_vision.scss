@@ -1,0 +1,61 @@
+.vision {
+    &__side {
+        transform: translateY(-400px);
+        padding-left: 140px;
+    }
+    &__bg{
+                background: url('../img/vision-bg.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    &__hexa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1 !important;
+    }
+    &__parallax {
+        position: relative;
+        .layer {
+            &1 {
+                top: 116px;
+                left: -70px;
+                z-index: 7;
+            }
+            &2 {
+                top: -86px;
+                left: -70px;
+            }
+            &3 {
+                top: 471px;
+                right: -90px;
+            }
+            &4 {
+                top: 241px;
+                left: -35px;
+                z-index: 5;
+            }
+            &5 {
+                top: 301px;
+                right: 10px;
+                z-index: 6;
+            }
+            &6 {
+                top: 356px;
+                left: 60px;
+            }
+            &7 {
+                top: 261px;
+                right: -140px;
+                transform: scale(.5);
+            }
+        }
+    }
+}

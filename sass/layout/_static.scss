@@ -1,0 +1,46 @@
+.static{
+    &__content{
+        position: relative;
+    }
+    &__title{
+        font: 800 80px/1.2 $font_primary;
+        color: $cl_blue;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        @include max-responsive($mntablet){
+            font-size: 40px;
+        }
+        &--white{
+            color: white;
+        }
+        &--lblue{
+            color: $cl_lblue;
+        }
+    }
+    &__lead{
+        font: 500 30px/1.2 $font_body;
+        text-transform: uppercase;
+        @include max-responsive($mntablet){
+            font-size: 24px;
+        }
+    }
+    &__paragraph{
+        font: 500 20px/1.5 $font_body;
+        margin-bottom: 30px;
+        width: 50%;
+        margin: 0 auto;
+        @include max-responsive($mntablet){
+            font-size: 16px;
+            width: 100%;
+        }
+        &--white{
+            color: white;
+        }
+        &--light{
+            font-weight: 300;
+        }
+        strong{
+            font-size: 24px;
+        }
+    }
+}

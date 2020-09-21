@@ -1,0 +1,57 @@
+.card {
+    margin: 50px auto;
+    position: relative;
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        flex-basis: 33.33%;
+        padding: 0 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        @include max-responsive($mntablet){
+            flex-basis: 50%;
+            width: 50%;
+        }
+        a{
+            display: block;
+        }
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        img{
+            width: 100%;
+            transition: .5s ease-in-out;
+        }
+    }
+    &__img{
+        overflow: hidden;
+    }
+    &__date{
+        font: 500 14px/1.2 $font_body;
+        color: #BFBFBF;
+        margin: 10px;
+    }
+    &__title{
+        font: 500 18px/1.2 $font_body;
+        color: $cl_black;
+        margin: 10px 40px;
+        max-height: 63px;
+        overflow: hidden;
+        @include max-responsive($mntablet){
+            margin: 10px 0;
+            max-height: auto;
+        }
+    }
+    &--inner{
+        .card__item{
+            @include max-responsive($mxphone){
+                flex-basis: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

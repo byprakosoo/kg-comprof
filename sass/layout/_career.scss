@@ -1,0 +1,67 @@
+.career {
+    min-height: 100vh;
+    background: url('../img/bg-about.jpg') no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+    @include min-responsive($mnlarge){
+        min-height: 65vh;
+    }
+    @include max-responsive($mxtablet){
+        min-height: 45vh;
+    }
+    @include max-responsive($mntablet){
+        min-height: 100vh;
+        background-position-x: right;
+    }
+    &__ornament{
+        position: absolute;
+        bottom: -25px;
+        right: 0;
+    }
+    &__content{
+        color: white;
+        margin-top: 50px;
+        padding-right: 20px;
+        .static{
+            &__title{
+                position: relative;
+                display: inline-block;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: -50%;
+                    width: 100px;
+                    height: 82px;
+                    background: url('../img/quote.svg');
+                    background-size: 100px 82px;
+                    @include max-responsive($mntablet){
+                        top: -25px;
+                        right: -65%;
+                        width: 76px;
+                        height: 58px;
+                        background-size: 76px 58px;
+                    }
+                }
+            }
+            &__paragraph{
+                margin: 20px 0;
+                font-size: 18px;
+            }
+        }
+    }
+    &__desc{
+        font: 500 20px/1.5 $font_body;
+        color: #707070;
+        margin: 50px 0 20px;
+        max-width: 430px;
+    }
+    &__box{
+        margin-bottom: 200px;
+    }
+    &__title{
+        font: 500 36px/1.2 $font_body;
+        color: $cl_blue;
+    }
+}

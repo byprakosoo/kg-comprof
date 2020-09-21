@@ -1,0 +1,30 @@
+.ceo {
+    &__img {
+        position: relative;
+        text-align: right;
+        &__title {
+            position: absolute;
+            bottom: 0;
+            right: 62.5%;
+            @include max-responsive($mntablet){
+                bottom: -40px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: -15px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: $cl_lblue;
+            }
+        }
+        .hidden {
+            display: none;
+        }
+        &__text{
+            font: 500 16px/1.2 $font_body;
+        }
+    }
+}

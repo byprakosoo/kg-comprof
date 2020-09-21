@@ -1,0 +1,31 @@
+.hero {
+    text-align: center;
+    position: relative;
+    display: block;
+    height: 300px;
+    overflow: hidden;
+    @include max-responsive($mntablet){
+        height: 255px;
+
+    }
+    @include max-responsive($xsphone){
+        height: 235px;
+    }
+    &__ornament{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: .75;
+    }
+    &__title{
+        font: 900 190px/1.5 $font_primary;
+        color: $cl_fogblue;
+        text-transform: uppercase;
+        transform: translate(-10%, 90px);
+        width: 120%;
+        @include max-responsive($mntablet){
+            font-size: 135px;
+        }
+    }
+}

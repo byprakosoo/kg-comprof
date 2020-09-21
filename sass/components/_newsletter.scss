@@ -1,0 +1,68 @@
+.kolom-newslt {
+    background: #e9f2ed;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 15px 10px;
+    overflow: hidden;
+    font-family: $font_child;
+    font-size: 13px;
+	font-weight: 300;
+    &__desc{
+		color: #365b97;
+	    padding: 0px 15px 0px;
+	    position: relative;
+	    height: auto;
+    }
+    &__table{
+    	margin: 5px 0 0px;
+    }
+    &__img {
+	    left: 10px;
+	    float: left;
+	    position: relative;
+	    z-index: 2;
+	}
+	&__btn {
+	    color: $cl_white;
+	    display: inline-block;
+	    background: #28aeb5;
+	    border: none;
+	    border-radius: 20px;
+	    outline: none;
+	    white-space: nowrap;
+	    cursor: pointer;
+	    font-weight: 400;
+	    padding: 9px 18px;
+	    margin: 12px 0 0 -73px;
+	    position: relative;
+	    float: left;
+	    z-index: 4;
+	    -webkit-transition: 0.2s ease-out;
+    	transition: 0.2s ease-out;
+	    &:hover{
+	    	background: #00878e;
+	    }
+	}
+	&__email{
+		float: left;
+	    position: relative;
+	    display: inline-block;
+	    z-index: 1;
+	    top: 10px;
+	    width: 240px;
+	    height: 40px;
+	    background: $cl_white;
+	    border-radius: 20px;
+	    -webkit-border-radius: 20px;
+	    -moz-border-radius: 20px;
+	}
+	&__input {
+	    border: none;
+	    padding-left: 18px;
+	    width: 160px;
+	    height: 40px;
+	    border-radius: 20px;
+	    -webkit-border-radius: 20px;
+	    -moz-border-radius: 20px;
+	}
+}

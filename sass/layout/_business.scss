@@ -1,0 +1,148 @@
+.business {
+    &Gate{
+        padding: 100px 0;
+    }
+
+    &__front {
+        margin: 0px auto;
+        padding-top: 100px;
+        @media only screen and (max-width:1400px){
+            padding-top: 0px;
+        }
+    }
+
+    &__detail {
+
+    }
+
+    &__icon {
+        display: flex;
+        position: relative;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: -45px;
+            width: 50px;
+            height: 50px;
+            background: url('../img/kg-icon-white.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__wrapper {
+        padding: 20px 0;
+    }
+
+    &Gate{
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+        &__item{
+            flex: 0 0 25%;
+            margin-bottom: 50px;
+            @include max-responsive($mntablet){
+                flex: 0 0 33.33%;
+                width: 33.33%;
+            }
+            @include max-responsive($mnphone){
+                flex: 0 0 50%;
+                width: 50%;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.1);           
+                }
+            }
+        }
+        &__thumb{
+            height: 241px;
+            overflow: hidden;
+            position: relative;
+            @include max-responsive($mnphone){
+                height: auto;
+            }
+            img{
+                transition: .5s ease-in-out;
+            }
+        }
+        &__box{
+            padding-right: 10px;
+        }
+        &__title{
+            font: 900 28px/1.2 $font_primary;
+            color: $cl_blue;
+            margin: 10px 0;
+            text-transform: uppercase;
+            text-align: center;
+            @include max-responsive($mntablet){
+                font-size: 29px;
+            }
+            @include max-responsive($mnphone){
+                font-size: 22px;
+            }
+            @include max-responsive($xsphone){
+                font-size: 19px;
+            }
+        }
+        &__lead{
+            font: 500 16px/1.2 $font_body;
+            color: $cl_black;
+        }
+    }
+
+    &__name {
+        @include font-pack($family: $font_business, $size: 1.5em, $weight: 700, $lh: false, $colour: $cl_blue);
+        margin-top: 15px;
+        position: relative;
+        text-transform: uppercase;
+        font-style: italic;
+        display: inline-flex;
+    }
+
+
+
+    &__ico {
+        filter: brightness(0) invert(1);
+        transition: filter .2s ease-in-out;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &__menu {
+        min-height: 100vh;
+        margin: 0px auto 0px;
+        padding: 100px 0 60px;
+        @include max-responsive($mntablet){
+            padding-top: 5px;
+        }
+        .panel__text__wrapper, .panel__paragraph, .panel__text{
+            @include max-responsive($mntablet){
+                margin-top: 0;
+            }
+        }
+    }
+    &__tabs{
+        .panel__text__wrapper, .panel__paragraph, .panel__text{
+            @include max-responsive($mntablet){
+                margin-top: 0;
+            }
+        }
+    }
+    &__accordion{
+        float: left;
+        width: 28.5%;
+        margin-bottom: 100px;
+        @include max-responsive($mntablet){
+            width: 100%;
+            margin-bottom: 45px;
+        }
+    }
+}

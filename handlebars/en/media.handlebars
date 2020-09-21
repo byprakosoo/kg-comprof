@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+
+<body>
+
+    {{>header_white_en page="Bisnis"}}
+    <!-- s:panel -->
+    <div id="panel">
+        <div class="parallax">
+            <div class="parallax__slider">
+                <div class="parallax__item">
+                    <div class="jumbotron" style="background: url('asset/img/media/media-slide-1.jpg') no-repeat center; background-size: cover;" data-paroller-factor="0.4" data-paroller-factor-xs="0.2" data-paroller-type="background" data-paroller-direction="vertical"></div>
+                </div>
+                <div class="parallax__item">
+                    <div class="jumbotron" style="background: url('asset/img/media/media-slide-2.jpg') no-repeat center; background-size: cover;" data-paroller-factor="0.3" data-paroller-factor-xs="0.2" data-paroller-type="background" data-paroller-direction="vertical"></div>
+                </div>
+                <div class="parallax__item">
+                    <div class="jumbotron" style="background: url('asset/img/media/media-slide-3.jpg') no-repeat center; background-size: cover;" data-paroller-factor="0.1" data-paroller-factor-xs="0.2" data-paroller-type="background" data-paroller-direction="vertical"></div>
+                </div>
+            </div>
+            <div class="parallax__text">
+                <div class="panel__title panel__title--right mb50">
+                    <h1 class="panel__title__text">Media</h1>
+                </div>
+                <div class="panel__paragraph panel__text--lstripe text-left mb150">
+                    <div class="panel__text__wrapper">
+                        <p class="panel__text panel__text--big">Complete and accurate information submitted by more than <b>150</b> brands of print, online, and broadcast media makes Kompas Gramedia the largest media company in Indonesia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax__down"><a class="parallax__btn"><span class="icon-chevron-down"></span></a></div>
+        </div>
+        <div class="media__bg" id="section-2">
+            <div class="panel__ornament">
+                <img src="asset/img/bg-ornament.png" alt="bg-ornament.png" class="panel__ornament--left">
+                <img src="asset/img/bg-ornament.png" alt="bg-ornament.png" class="panel__ornament--right">
+            </div>
+            <div class="container clearfix business__detail">
+                <div class="panel__wrapper col-30">
+                    <!-- s:media filter-->
+                    <div class="accordion__group wrap" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="accordion__hero">
+                            <h2 class="accordion__hero--text">Media Classification</h2>
+                        </div>
+                        {{#each media_en}}
+                        <div class="pnl">
+                            <div class="accordion__heading{{#if status}} active{{else}}{{/if}}" role="tab" id="{{heading}}">
+                                <h4 class="accordion__title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#{{collapse}}" aria-expanded="true" aria-controls="{{collapse}}">{{title}}</a>
+                                </h4>
+                            </div>
+                            <div id="{{collapse}}" class="accordion__collapse collapse{{#if status}} show{{else}}{{/if}}" role="tabpanel" aria-labelledby="{{heading}}">
+                                <div class="accordion__body">
+                                    <ul class="accordion__filter checkbox">
+                                        {{#each submenu}}
+                                        <li>
+                                            <input id="{{no}}-option" type="checkbox" class="checkbox__input" />
+                                            <label for="{{no}}-option" class="checkbox__label">{{title}}</label>
+                                        </li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <!-- e:media filter-->
+                </div>
+                <div class="panel__wrapper text-right col-70">
+                    <div class="panel__content">
+                        <!-- s:media item-->
+                        <div class="media__category">
+                            <h2 class="media__category__title">Berita Nasional</h2>
+                        </div>
+                        <div class="business__tabs hexa__media mt100">
+                            <div class="hexa__media__wrap">
+                                <ul class="hexa__gate__menu clearfix" data-type="tabs">
+                                    <li class="hexa__media__item">
+                                        <a href="#kompas" class="hexa__gate__link">
+                                            <div class="front">
+                                                <div class="hexa__media__logo">
+                                                    <img src="asset/img/media/kompas.png" alt="" class="hexa__media__img">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hexa__media__item top">
+                                        <a href="#kontan" class="hexa__gate__link">
+                                            <div class="front">
+                                                <div class="hexa__media__logo">
+                                                    <img src="asset/img/media/kontan.png" alt="" class="hexa__media__img">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hexa__media__item">
+                                        <a href="#kontan-id" class="hexa__gate__link">
+                                            <div class="front">
+                                                <div class="hexa__media__logo">
+                                                    <img src="asset/img/media/kontan-id.png" alt="" class="hexa__media__img">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hexa__media__item top">
+                                        <a href="#kontan-tabloid" class="hexa__gate__link">
+                                            <div class="front">
+                                                <div class="hexa__media__logo">
+                                                    <img src="asset/img/media/kontan-tabloid.png" alt="" class="hexa__media__img">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hexa__media__item">
+                                        <a href="#kompas-com" class="hexa__gate__link">
+                                            <div class="front">
+                                                <div class="hexa__media__logo">
+                                                    <img src="asset/img/media/kompas-com.png" alt="" class="hexa__media__img">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hexa__media__item">
+                                        <a href="#kompasiana" class="hexa__gate__link">
+                                            <div class="front front__dark">
+                                                <div class="hexa__media__logo">
+                                                    <img src="asset/img/media/kompasiana.png" alt="" class="hexa__media__img">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hexa__media__item top">
+                                        <a href="#kompas-karier" class="hexa__gate__link">
+                                            <div class="front front__dark">
+                                                <div class="hexa__media__logo">
+                                                    <img src="asset/img/media/kompas-karier.png" alt="" class="hexa__media__img">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hexa__media__item">
+                                        <a href="#kompas-tv" class="hexa__gate__link">
+                                            <div class="front front__dark">
+                                                <div class="hexa__media__logo">
+                                                    <img src="asset/img/media/kompas-tv.png" alt="" class="hexa__media__img">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hexa__media__item top">
+                                        <a href="#ktv" class="hexa__gate__link">
+                                            <div class="front front__dark">
+                                                <div class="hexa__media__logo">
+                                                    <img src="asset/img/media/ktv.png" alt="" class="hexa__media__img">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hexa__media__item">
+                                        <a href="#press-release" class="hexa__gate__link">
+                                            <div class="front front__dark">
+                                                <div class="hexa__media__logo">
+                                                    <img src="asset/img/media/press-release.png" alt="" class="hexa__media__img">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="hexa__gate__contents clearfix" id="tabs-content">
+                                    <li class="hexa__gate__content clearfix" id="kompas">
+                                        <div class="hexa__gate__desc">
+                                            <div class="hexa__gate__icon"><img src="asset/img/media/kompas.png" alt="asset/img/media/kompas.png"></div>
+                                            <div class="panel__paragraph panel__text--cstripe text-left">
+                                                <div class="panel__text__wrapper panel__text__wrapper--black scrollbar-inner">
+                                                    <p class="panel__text">Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Harian Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari Kelompok Kompas Gramedia (KKG). Harian Kompas terbit pertama kali 28 Juni 1965, dan didirikan oleh P.K Ojong dan Jakob Oetama. </p>
+                                                    <p class="panel__text">Mengusung “Amanat Hati Nurani Rakyat” sebagai moto, Harian Kompas tumbuh menjadi surat kabar yang kredibel dan menjadi inspirasi lintas generasi bagi Indonesia. Harian Kompas adalah salah satu surat kabar yang diaudit oleh Audit Bereau of Circulation(ABC) dan telah memenangkan beragam penghargaan bergengsi dibidang jurnalistik di dalam maupun luar negeri. </p>
+                                                    <p class="panel__text">Seturut dengan perkembangan industri media, Harian Kompas pun merespon perubahan pola konsumsi media. Hadir dalam layanan berita digital berbayar, Harian Kompas yang dapat diakses melalui Kompas.id. Inovasi ini dilakukan sebagai jawaban atas tantangan zaman namun dengan tetap menjaga nilai-nilai jurnalisme khas Harian Kompas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://kompas.id/" target="_blank" class="hexa__gate__url">kompas.id</a>
+                                        </div>
+                                    </li>
+                                    <li class="hexa__gate__content clearfix" id="kontan">
+                                        <div class="hexa__gate__desc">
+                                            <div class="hexa__gate__icon"><img src="asset/img/media/kompas.png" alt="asset/img/media/kompas.png"></div>
+                                            <div class="panel__paragraph panel__text--cstripe text-left">
+                                                <div class="panel__text__wrapper panel__text__wrapper--black scrollbar-inner">
+                                                    <p class="panel__text">Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Harian Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari Kelompok Kompas Gramedia (KKG). Harian Kompas terbit pertama kali 28 Juni 1965, dan didirikan oleh P.K Ojong dan Jakob Oetama. </p>
+                                                    <p class="panel__text">Mengusung “Amanat Hati Nurani Rakyat” sebagai moto, Harian Kompas tumbuh menjadi surat kabar yang kredibel dan menjadi inspirasi lintas generasi bagi Indonesia. Harian Kompas adalah salah satu surat kabar yang diaudit oleh Audit Bereau of Circulation(ABC) dan telah memenangkan beragam penghargaan bergengsi dibidang jurnalistik di dalam maupun luar negeri. </p>
+                                                    <p class="panel__text">Seturut dengan perkembangan industri media, Harian Kompas pun merespon perubahan pola konsumsi media. Hadir dalam layanan berita digital berbayar, Harian Kompas yang dapat diakses melalui Kompas.id. Inovasi ini dilakukan sebagai jawaban atas tantangan zaman namun dengan tetap menjaga nilai-nilai jurnalisme khas Harian Kompas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://kompas.id/" target="_blank" class="hexa__gate__url">kompas.id</a>
+                                        </div>
+                                    </li>
+                                    <li class="hexa__gate__content clearfix" id="kontan-id">
+                                        <div class="hexa__gate__desc">
+                                            <div class="hexa__gate__icon"><img src="asset/img/media/kompas.png" alt="asset/img/media/kompas.png"></div>
+                                            <div class="panel__paragraph panel__text--cstripe text-left">
+                                                <div class="panel__text__wrapper panel__text__wrapper--black scrollbar-inner">
+                                                    <p class="panel__text">Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Harian Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari Kelompok Kompas Gramedia (KKG). Harian Kompas terbit pertama kali 28 Juni 1965, dan didirikan oleh P.K Ojong dan Jakob Oetama. </p>
+                                                    <p class="panel__text">Mengusung “Amanat Hati Nurani Rakyat” sebagai moto, Harian Kompas tumbuh menjadi surat kabar yang kredibel dan menjadi inspirasi lintas generasi bagi Indonesia. Harian Kompas adalah salah satu surat kabar yang diaudit oleh Audit Bereau of Circulation(ABC) dan telah memenangkan beragam penghargaan bergengsi dibidang jurnalistik di dalam maupun luar negeri. </p>
+                                                    <p class="panel__text">Seturut dengan perkembangan industri media, Harian Kompas pun merespon perubahan pola konsumsi media. Hadir dalam layanan berita digital berbayar, Harian Kompas yang dapat diakses melalui Kompas.id. Inovasi ini dilakukan sebagai jawaban atas tantangan zaman namun dengan tetap menjaga nilai-nilai jurnalisme khas Harian Kompas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://kompas.id/" target="_blank" class="hexa__gate__url">kompas.id</a>
+                                        </div>
+                                    </li>
+                                    <li class="hexa__gate__content clearfix" id="kontan-tabloid">
+                                        <div class="hexa__gate__desc">
+                                            <div class="hexa__gate__icon"><img src="asset/img/media/kompas.png" alt="asset/img/media/kompas.png"></div>
+                                            <div class="panel__paragraph panel__text--cstripe text-left">
+                                                <div class="panel__text__wrapper panel__text__wrapper--black scrollbar-inner">
+                                                    <p class="panel__text">Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Harian Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari Kelompok Kompas Gramedia (KKG). Harian Kompas terbit pertama kali 28 Juni 1965, dan didirikan oleh P.K Ojong dan Jakob Oetama. </p>
+                                                    <p class="panel__text">Mengusung “Amanat Hati Nurani Rakyat” sebagai moto, Harian Kompas tumbuh menjadi surat kabar yang kredibel dan menjadi inspirasi lintas generasi bagi Indonesia. Harian Kompas adalah salah satu surat kabar yang diaudit oleh Audit Bereau of Circulation(ABC) dan telah memenangkan beragam penghargaan bergengsi dibidang jurnalistik di dalam maupun luar negeri. </p>
+                                                    <p class="panel__text">Seturut dengan perkembangan industri media, Harian Kompas pun merespon perubahan pola konsumsi media. Hadir dalam layanan berita digital berbayar, Harian Kompas yang dapat diakses melalui Kompas.id. Inovasi ini dilakukan sebagai jawaban atas tantangan zaman namun dengan tetap menjaga nilai-nilai jurnalisme khas Harian Kompas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://kompas.id/" target="_blank" class="hexa__gate__url">kompas.id</a>
+                                        </div>
+                                    </li>
+                                    <li class="hexa__gate__content clearfix" id="kompas-com">
+                                        <div class="hexa__gate__desc">
+                                            <div class="hexa__gate__icon"><img src="asset/img/media/kompas.png" alt="asset/img/media/kompas.png"></div>
+                                            <div class="panel__paragraph panel__text--cstripe text-left">
+                                                <div class="panel__text__wrapper panel__text__wrapper--black scrollbar-inner">
+                                                    <p class="panel__text">Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Harian Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari Kelompok Kompas Gramedia (KKG). Harian Kompas terbit pertama kali 28 Juni 1965, dan didirikan oleh P.K Ojong dan Jakob Oetama. </p>
+                                                    <p class="panel__text">Mengusung “Amanat Hati Nurani Rakyat” sebagai moto, Harian Kompas tumbuh menjadi surat kabar yang kredibel dan menjadi inspirasi lintas generasi bagi Indonesia. Harian Kompas adalah salah satu surat kabar yang diaudit oleh Audit Bereau of Circulation(ABC) dan telah memenangkan beragam penghargaan bergengsi dibidang jurnalistik di dalam maupun luar negeri. </p>
+                                                    <p class="panel__text">Seturut dengan perkembangan industri media, Harian Kompas pun merespon perubahan pola konsumsi media. Hadir dalam layanan berita digital berbayar, Harian Kompas yang dapat diakses melalui Kompas.id. Inovasi ini dilakukan sebagai jawaban atas tantangan zaman namun dengan tetap menjaga nilai-nilai jurnalisme khas Harian Kompas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://kompas.id/" target="_blank" class="hexa__gate__url">kompas.id</a>
+                                        </div>
+                                    </li>
+                                    <li class="hexa__gate__content clearfix" id="kompasiana">
+                                        <div class="hexa__gate__desc">
+                                            <div class="hexa__gate__icon"><img src="asset/img/media/kompas.png" alt="asset/img/media/kompas.png"></div>
+                                            <div class="panel__paragraph panel__text--cstripe text-left">
+                                                <div class="panel__text__wrapper panel__text__wrapper--black scrollbar-inner">
+                                                    <p class="panel__text">Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Harian Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari Kelompok Kompas Gramedia (KKG). Harian Kompas terbit pertama kali 28 Juni 1965, dan didirikan oleh P.K Ojong dan Jakob Oetama. </p>
+                                                    <p class="panel__text">Mengusung “Amanat Hati Nurani Rakyat” sebagai moto, Harian Kompas tumbuh menjadi surat kabar yang kredibel dan menjadi inspirasi lintas generasi bagi Indonesia. Harian Kompas adalah salah satu surat kabar yang diaudit oleh Audit Bereau of Circulation(ABC) dan telah memenangkan beragam penghargaan bergengsi dibidang jurnalistik di dalam maupun luar negeri. </p>
+                                                    <p class="panel__text">Seturut dengan perkembangan industri media, Harian Kompas pun merespon perubahan pola konsumsi media. Hadir dalam layanan berita digital berbayar, Harian Kompas yang dapat diakses melalui Kompas.id. Inovasi ini dilakukan sebagai jawaban atas tantangan zaman namun dengan tetap menjaga nilai-nilai jurnalisme khas Harian Kompas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://kompas.id/" target="_blank" class="hexa__gate__url">kompas.id</a>
+                                        </div>
+                                    </li>
+                                    <li class="hexa__gate__content clearfix" id="kompas-karier">
+                                        <div class="hexa__gate__desc">
+                                            <div class="hexa__gate__icon"><img src="asset/img/media/kompas.png" alt="asset/img/media/kompas.png"></div>
+                                            <div class="panel__paragraph panel__text--cstripe text-left">
+                                                <div class="panel__text__wrapper panel__text__wrapper--black scrollbar-inner">
+                                                    <p class="panel__text">Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Harian Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari Kelompok Kompas Gramedia (KKG). Harian Kompas terbit pertama kali 28 Juni 1965, dan didirikan oleh P.K Ojong dan Jakob Oetama. </p>
+                                                    <p class="panel__text">Mengusung “Amanat Hati Nurani Rakyat” sebagai moto, Harian Kompas tumbuh menjadi surat kabar yang kredibel dan menjadi inspirasi lintas generasi bagi Indonesia. Harian Kompas adalah salah satu surat kabar yang diaudit oleh Audit Bereau of Circulation(ABC) dan telah memenangkan beragam penghargaan bergengsi dibidang jurnalistik di dalam maupun luar negeri. </p>
+                                                    <p class="panel__text">Seturut dengan perkembangan industri media, Harian Kompas pun merespon perubahan pola konsumsi media. Hadir dalam layanan berita digital berbayar, Harian Kompas yang dapat diakses melalui Kompas.id. Inovasi ini dilakukan sebagai jawaban atas tantangan zaman namun dengan tetap menjaga nilai-nilai jurnalisme khas Harian Kompas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://kompas.id/" target="_blank" class="hexa__gate__url">kompas.id</a>
+                                        </div>
+                                    </li>
+                                    <li class="hexa__gate__content clearfix" id="kompas-tv">
+                                        <div class="hexa__gate__desc">
+                                            <div class="hexa__gate__icon"><img src="asset/img/media/kompas.png" alt="asset/img/media/kompas.png"></div>
+                                            <div class="panel__paragraph panel__text--cstripe text-left">
+                                                <div class="panel__text__wrapper panel__text__wrapper--black scrollbar-inner">
+                                                    <p class="panel__text">Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Harian Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari Kelompok Kompas Gramedia (KKG). Harian Kompas terbit pertama kali 28 Juni 1965, dan didirikan oleh P.K Ojong dan Jakob Oetama. </p>
+                                                    <p class="panel__text">Mengusung “Amanat Hati Nurani Rakyat” sebagai moto, Harian Kompas tumbuh menjadi surat kabar yang kredibel dan menjadi inspirasi lintas generasi bagi Indonesia. Harian Kompas adalah salah satu surat kabar yang diaudit oleh Audit Bereau of Circulation(ABC) dan telah memenangkan beragam penghargaan bergengsi dibidang jurnalistik di dalam maupun luar negeri. </p>
+                                                    <p class="panel__text">Seturut dengan perkembangan industri media, Harian Kompas pun merespon perubahan pola konsumsi media. Hadir dalam layanan berita digital berbayar, Harian Kompas yang dapat diakses melalui Kompas.id. Inovasi ini dilakukan sebagai jawaban atas tantangan zaman namun dengan tetap menjaga nilai-nilai jurnalisme khas Harian Kompas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://kompas.id/" target="_blank" class="hexa__gate__url">kompas.id</a>
+                                        </div>
+                                    </li>
+                                    <li class="hexa__gate__content clearfix" id="ktv">
+                                        <div class="hexa__gate__desc">
+                                            <div class="hexa__gate__icon"><img src="asset/img/media/kompas.png" alt="asset/img/media/kompas.png"></div>
+                                            <div class="panel__paragraph panel__text--cstripe text-left">
+                                                <div class="panel__text__wrapper panel__text__wrapper--black scrollbar-inner">
+                                                    <p class="panel__text">Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Harian Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari Kelompok Kompas Gramedia (KKG). Harian Kompas terbit pertama kali 28 Juni 1965, dan didirikan oleh P.K Ojong dan Jakob Oetama. </p>
+                                                    <p class="panel__text">Mengusung “Amanat Hati Nurani Rakyat” sebagai moto, Harian Kompas tumbuh menjadi surat kabar yang kredibel dan menjadi inspirasi lintas generasi bagi Indonesia. Harian Kompas adalah salah satu surat kabar yang diaudit oleh Audit Bereau of Circulation(ABC) dan telah memenangkan beragam penghargaan bergengsi dibidang jurnalistik di dalam maupun luar negeri. </p>
+                                                    <p class="panel__text">Seturut dengan perkembangan industri media, Harian Kompas pun merespon perubahan pola konsumsi media. Hadir dalam layanan berita digital berbayar, Harian Kompas yang dapat diakses melalui Kompas.id. Inovasi ini dilakukan sebagai jawaban atas tantangan zaman namun dengan tetap menjaga nilai-nilai jurnalisme khas Harian Kompas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://kompas.id/" target="_blank" class="hexa__gate__url">kompas.id</a>
+                                        </div>
+                                    </li>
+                                    <li class="hexa__gate__content clearfix" id="press-release">
+                                        <div class="hexa__gate__desc">
+                                            <div class="hexa__gate__icon"><img src="asset/img/media/kompas.png" alt="asset/img/media/kompas.png"></div>
+                                            <div class="panel__paragraph panel__text--cstripe text-left">
+                                                <div class="panel__text__wrapper panel__text__wrapper--black scrollbar-inner">
+                                                    <p class="panel__text">Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Harian Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari Kelompok Kompas Gramedia (KKG). Harian Kompas terbit pertama kali 28 Juni 1965, dan didirikan oleh P.K Ojong dan Jakob Oetama. </p>
+                                                    <p class="panel__text">Mengusung “Amanat Hati Nurani Rakyat” sebagai moto, Harian Kompas tumbuh menjadi surat kabar yang kredibel dan menjadi inspirasi lintas generasi bagi Indonesia. Harian Kompas adalah salah satu surat kabar yang diaudit oleh Audit Bereau of Circulation(ABC) dan telah memenangkan beragam penghargaan bergengsi dibidang jurnalistik di dalam maupun luar negeri. </p>
+                                                    <p class="panel__text">Seturut dengan perkembangan industri media, Harian Kompas pun merespon perubahan pola konsumsi media. Hadir dalam layanan berita digital berbayar, Harian Kompas yang dapat diakses melalui Kompas.id. Inovasi ini dilakukan sebagai jawaban atas tantangan zaman namun dengan tetap menjaga nilai-nilai jurnalisme khas Harian Kompas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="https://kompas.id/" target="_blank" class="hexa__gate__url">kompas.id</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- e:media item-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- e:panel -->
+
+    {{>footer}} {{>script}}
+</body>
+
+</html>

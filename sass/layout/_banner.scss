@@ -1,0 +1,10 @@
+.banner{
+	&-top{
+		width: 970px;
+	    height: 90px;
+	    position: relative;
+	    overflow: hidden;
+		margin: 20px auto;    
+		z-index: 1;
+	}
+}

@@ -1,0 +1,32 @@
+.share{
+    display: flex;
+    margin: 20px 0;
+    &__item{
+        margin: 0 5px;
+        padding: 5px;
+        border-radius: 100px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform .1s ease-in-out;
+        cursor: pointer;
+        &.twitter{
+            background: $cl_tw;
+        }
+        &.facebook{
+            background: $cl_fb;
+        }
+        &.google-plus{
+            background: $cl_gp;
+        }
+        &:hover{
+            color: white;
+            transform: translateY(-5px)
+        }
+    }
+    &__link{
+        color: white;
+    }
+}

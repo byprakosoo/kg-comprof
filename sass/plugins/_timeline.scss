@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//$cl_purple: #AD1457; /* dark pink for the cl_purple */
+//$cl_blue: #00838F; /*dark cayn for the boxes */
+//$font-color: #F8BBD0; /* light pink  for the words*/
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+    //    transform: translateY(-78px);
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        width: 22px;
+        height: 22px;
+        // border-radius: 50%;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        background: $cl_lblue;
+        z-index: 1;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 57px;
+        left: 49.8%;
+        width: 25px;
+        height: 25px;
+        background: url('../img/arrow-down.png');
+        background-repeat: no-repeat;
+    }
+    @include max-responsive($mntablet) {
+        transform: translateY(0px);
+        padding-top: 20px;
+    }
+}
+
+.timeline ul {
+    //    background: white;
+    padding: 50px 0;
+    overflow: hidden;
+    @include max-responsive ($mxphone) {
+        padding: 0 0 50px;
+    }
+}
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 15px;
+    margin: 0 auto;
+    padding-top: 10px; //    background: $cl_yellow;
+    border-left: 3px dashed #a2a2a2;
+    color: white;
+    transform: translateX(17px);
+    @include min-responsive($mntablet) {
+        height: 175px;
+    }
+}
+
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 110px;
+    z-index: 1;
+    @include min-responsive($mntablet) {
+        bottom: 35px;
+    }
+    @include max-responsive($mntablet) {
+        bottom: 35px;
+    }
+}
+
+.timeline ul li::before {
+    content: '';
+    position: absolute;
+    bottom: 50%; //    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline ul li:nth-child(odd)::before {
+    left: -14px;
+
+}
+
+.timeline ul li:nth-child(even)::before {
+    right: 0px; //    border-width: 8px 0 8px 16px;
+    //    border-color: transparent transparent transparent #0e357b;
+}
+
+
+//.timeline ul li:first-child {
+//    &::after {
+//        @include min-responsive($mntablet) {
+//            bottom: 10px;
+//        }
+//    }
+//}
+.timeline ul li .history__content {
+    position: relative;
+    width: 80px;
+    height: 140px;
+}
+
+.timeline ul li .history__content::before {
+    //    content: '';
+    //    position: absolute;
+    //    bottom: 35px;
+    //    width: 0;
+    //    height: 0;
+    //    border-style: solid;
+}
+
+.timeline ul li:nth-child(even) div {
+    left: 255px;
+}
+
+.timeline ul li:nth-child(even) div::before {}
+
+.timeline ul li:nth-child(odd) div {
+    left: -345px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+    //    right: -15px;
+    //    border-width: 8px 0 8px 16px;
+}
+
+time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+    transition: background .5s ease-in-out;
+}
+
+//.timeline ul li::before {
+//    transition: background .5s ease-in-out;
+//}
+.timeline ul li.in-view::after {
+    //    background: $cl_blue;
+}
+
+.timeline ul li.in-view:nth-child(even)::before {
+    border-width: 8px 0 8px 10px; //    border-color: transparent #0e357b transparent transparent;
+}
+
+.timeline ul li.in-view:nth-child(odd)::before {
+    border-width: 8px 10px 8px 0; //    border-color: transparent #0e357b transparent transparent;
+}
+
+.timeline ul li .history__content {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(even) div {
+    transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(odd) div {
+    transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+    top: 0px;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+    .timeline ul li .history__content {
+        width: 250px;
+    }
+    .timeline ul li:nth-child(odd) div {
+        left: -289px;
+        /*250+45-6*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline ul li {
+        margin-left: 20px;
+    }
+    .timeline ul li .history__content {
+        width: calc(100vw - 91px);
+    }
+    .timeline ul li:nth-child(odd) div {
+        left: 45px;
+    }
+    .timeline ul li:nth-child(odd) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent $cl_blue transparent transparent;
+    }
+}
+
+.timeline {
+    .history {
+        &__img {
+            position: absolute;
+        }
+    }
+}
+
+
+/////////////////////////
+// my photo in the snow
+///////////////////////
+#meBaby {
+    width: 100px;
+    height: 135px;
+}
+
+.photos {
+    width: 100px;
+    height: auto;
+}
+
+.in-view {
+    list-style: none !important;
+}

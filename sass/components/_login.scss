@@ -1,0 +1,61 @@
+.login {
+    &__head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    &__title {
+        font-family: $font_title;
+        color: white;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    &__container {
+        background: $cl_lblue !important;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__input {
+        width: 50%;
+        margin: 10px auto;
+        border-radius: 20px;
+        padding: 10px;
+        border-width: 0px;
+        color: $cl_blue;
+        // font-family: $font_title;
+        &::placeholder {
+            color: $cl_blue;
+            font-weight: 500;
+        }
+    }
+    &__content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    &__btn {
+        margin: 0 5px;
+        padding: 10px;
+        border-radius: 20px;
+        background: $cl_blue;
+        a {
+            color: white;
+            font-family: $font_title;
+            font-size: 16px;
+        }
+        &--grey {
+            background: $cl_grey;
+            a {
+                color: $cl_blue;
+            }
+        }
+    }
+}

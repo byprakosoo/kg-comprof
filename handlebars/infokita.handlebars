@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head page="Info Kita"}}
+
+<body>
+
+    {{>header page="Ruang Media"}}
+    <!-- s:panel -->
+    <div id="panel" class="panel">
+        <div class="hero">
+            <img src="asset/img/panel-head.png" alt="panel-head.png" class="hero__ornament">
+            <h1 class="hero__title">Ruang Media</h1>
+        </div>
+        <div class="container clearfix panel__overlay">
+            <div class="panel__content">
+                <div class="panel__title">
+                    <h1 class="panel__title__text">infokita</h1>
+                    <p>Majalah internal Kompas Gramedia</p>
+                </div>
+                {{>card_infokita}}
+                {{>pagination_white}}
+            </div>
+        </div>
+        <!-- cd-popup-container -->
+        <div class="cd-popup" role="alert">
+            <div class="cd-popup-container login__container clearfix">
+                <div class="login__head">
+                    <div class="login__icon">
+                        <img src="asset/img/infokita-user.png" alt="infokita-user.png">
+                    </div>
+                    <h2 class="login__title">Unduh</h2>
+                </div>
+                <div class="login__content">
+                    <div class="login__form">
+                        <input type="input" class="login__input" id="login-nik" placeholder="NIK">
+                        <input type="password" class="login__input" id="login-pass" placeholder="Password">
+                    </div>
+                    <div class="login__button">
+                        <div class="login__btn">
+                            <a class="login__click" id="login-in" href="#0">Unduh</a>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="#0" class="cd-popup-close img-replace"></a>
+            </div>
+            <!-- cd-popup-container -->
+        </div>
+        <!-- cd-popup -->
+    </div>
+    <!-- e:panel -->
+    {{>footer}} {{>script page="infokita"}}
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.sitemap {
+    margin: 0px auto;
+    padding-bottom: 75px;
+    &__title {
+        margin: 0 auto 15px;
+    padding-top: 75px;
+        &__text {
+            @include font-pack($family: $font_primary, $size: 26px, $weight: 700, $lh: false, $colour: black);
+            text-transform: uppercase;
+        }
+    }
+    &__head {
+        margin: 20px 0;
+        &__text {
+            a{
+                @include font-pack($family: $font_primary, $size: 20px, $weight: 700, $lh: false, $colour: $cl_blue);
+            }
+        }
+    }
+    &__item {
+        display: flex;
+        @include max-responsive($mxphone){
+            margin-bottom: 10px;
+        }
+    }
+    &__paragraph{
+        margin-right: 10px;
+        a{
+            @include font-pack($family: $font_body, $size: 18px, $weight: 300, $lh: false, $colour: black);
+            transition: .2s ease-in-out;
+            @include max-responsive($mxphone){
+                font-size: 16px;
+            }
+            &:hover{
+                color: $cl_blue;
+                font-weight: 500;
+            }
+            
+        }
+    }
+}

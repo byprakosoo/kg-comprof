@@ -1,0 +1,193 @@
+/* Obrolan */
+.obrolan {margin:20px 0;}
+.obrolan__row {border-top:1px solid #ededed; position: relative;}
+.obrolan__row:last-child {border-bottom:1px solid #ededed;}
+.obrolan__row span {padding:0 15px;}
+.obrolan__row a {display:block;padding: 15px 0;}
+.obrolan__row a:hover, .obrolan__row a:active, .obrolan__row a.active {background:#fbfbfb; }
+.obrolan__row a h1 {font:500 14px $font_child; margin: 0; color: #1d61ab;text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height: 3.6em;line-height: 1.8em;}
+.obrolan__row a h2, .obrolan__row a:hover h2 {font:500 14px $font_body; margin: 0; color:#161b28;text-overflow: ellipsis;white-space:nowrap;overflow: hidden;max-height: 1.8em;line-height: 1.8em;  }
+.obrolan__row a h3, .obrolan__row a:hover h3 {font:300 14px/26px $font_body; margin: 0; color:#c3c3c3;  }
+.obrolan__row a p {font:300 14px/26px $font_body; margin: 0; color: #a6a7a7;text-overflow: ellipsis;white-space:nowrap;overflow: hidden;max-height: 1.8em;line-height: 1.8em; }
+a.obrolan__row__trash {display: inline-block; position: absolute;right: 0; top: 5px; color:#c3c3c3}
+a.obrolan__row__trash:hover {color:#e04c4c; }
+.modal-backdrop.in { display: none;}
+.obrolan .komentar .form textarea {border: 1px solid #e4e3e3;box-shadow:none;-webkit-box-shadow:none;border-radius: 10px; padding: 10px 15px;}
+.obrolan__chat {padding:10px 0; border-bottom: 1px solid #d9d9d9; }
+.obrolan__chat__list { font: 13px open sans, arial; padding: 10px 30px 10px 0; cursor: pointer;}
+.obrolan__chat__list:hover {color:#125ba8 }
+.obrolan__chat__list:after {font-size: 14px; margin-left: 10px;}
+.obrolan__chat__list--active {display: none;}
+.obrolan__chat__list--show {display: none;}
+.obrolan__chat__top h2 {font:500 13px $font_child; color:#c0c0c1; margin: 0;  }.obrolan__chat__top h2 span {font:13px $font_child; text-decoration:underline; color:#151b28;}
+.obrolan__skin__wrap {
+	margin:20px 0;
+	max-height: 400px;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.obrolan__skin__title a {
+	font:12px $font_child; color: #b3b3b3;
+}
+.obrolan__skin__title a:hover {
+	color: #125ba8;
+}
+.obrolan__skin__title__input {
+	border: 1px solid #efeeee;
+    padding: 9px 10px;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 3px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    outline: none;
+    font:italic 14px $font_child;
+    color: #909090;
+}
+.obrolan__skin__items--you__title {
+	font:300 13px $font_child;
+	color: #c6c6c6;
+	margin: 5px 0;
+	float: right;
+}
+.obrolan__skin__items--you__thumbs__img {
+	width: 52px;
+	height: 52px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 100%;-webkit-border-radius: 100%;-moz-border-radius: 100%;-o-border-radius: 100%;
+}
+.obrolan__skin__items--you__thumbs__img img {
+	width:52px;
+	height: 52px;
+	border-radius: 100%;-webkit-border-radius: 100%;-moz-border-radius: 100%;-o-border-radius: 100%;
+}
+.obrolan__skin__items--you__content__bubble {
+	padding:15px;
+	background: #f7f7f7;
+	border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;-o-border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
+	display: inline-block;
+	position: relative;
+	margin-bottom: 15px;
+}
+.obrolan__skin__items--you__content__bubble:before {
+	position: absolute;
+	left: -8px;
+	width: 10px;
+	height: 10px;
+	color: #f7f7f7;
+	font-size: 22px;
+	top: 7px;
+	text-shadow: -1px 2px 1px #e6e6e6;
+}
+.obrolan__skin__items--you__content__bubble__time {
+	font:300 11px $font_child;
+	color: #c6c6c6;
+	position: absolute;
+	width: 40px;
+	bottom:2px;
+	right: -50px;
+}
+/*other*/
+.obrolan__skin__items--other__thumbs__img {
+	width: 52px;
+	height: 52px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 100%;-webkit-border-radius: 100%;-moz-border-radius: 100%;-o-border-radius: 100%;
+}
+.obrolan__skin__items--other__thumbs { float: right;}
+.obrolan__skin__items--other__thumbs__img { float: right;}
+.obrolan__skin__items--other__thumbs__img img {
+	width:52px;
+	height: 52px;
+	border-radius: 100%;-webkit-border-radius: 100%;-moz-border-radius: 100%;-o-border-radius: 100%;
+}
+.obrolan__skin__items--other__content {float: right;}
+.obrolan__skin__items--other__content__bubble {
+	padding:15px;
+	background: #e6f7fe;
+	border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;-o-border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
+	display: inline-block;
+	position: relative;
+	margin-bottom: 15px;
+	float:right;
+}
+.obrolan__skin__items--other__content__bubble:after {
+	position: absolute;
+	right: -8px;
+	width: 10px;
+	height: 10px;
+	color: #e6f7fe;
+	font-size: 22px;
+	top: 7px;
+	text-shadow: 1px 2px 1px #e6e6e6;
+}
+.obrolan__skin__items--other__content__bubble__time {
+	font:300 11px $font_child;
+	color: #c6c6c6;
+	position: absolute;
+	width: 40px;
+	bottom:2px;
+	left: -50px;
+	text-align: right;
+}
+.obrolan__skin__items__delete {
+	display: none;
+	font: 10px/11px open sans, arial;
+	color: #fff;
+	background: rgba(0,0,0,0.3);
+	width: 13px;
+	height: 13px;
+	text-align: center;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	border-radius: 100%;-webkit-border-radius: 100%;-moz-border-radius: 100%;-o-border-radius: 100%;
+}
+.obrolan__skin__items__delete:hover {
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+}
+.obrolan__skin__items--other__title {
+	font:300 13px $font_child;
+	color: #c6c6c6;
+	margin: 5px 0;
+	text-align: right;
+}
+input.obrolan__skin__title__input[disabled] {
+	background: none;
+	font:500 14px $font_child;
+	color: #151b28!important;
+	border: none;
+}
+.no-border { border: none;}
+
+.box-user-in {margin-bottom: 0;}
+.button-user a {padding:10px; font: 11px/14px $font_child; color: #fff!important; display: block; text-align:center;text-transform: uppercase; margin: 0; }
+.button-user a.add-friend {background:#02b875; }
+.button-user a.add-friend:hover {background:#007a4d;color:#fff!important;}
+.button-user a.obrolan {background:#3982ce;}
+.button-user a.obrolan:hover {background:#0263c9;color:#fff!important;}
+.btn-standart span {line-height: 24px;}
+
+.icon-bin{
+	margin-right: 15px;
+}
+.icon-plus{
+	font-size: 14px;
+    position: relative;
+    bottom: -2px;
+    margin-right: 5px;
+}

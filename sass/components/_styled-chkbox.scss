@@ -1,0 +1,66 @@
+.styled-checkbox {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+    &__item {
+        padding: 10px 20px;
+    }
+    & + input {
+        background: $cl_grey;
+    }
+    & + label {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        @include font-pack($family: $font_primary, $size: 14px, $weight: 300, $lh: false, $colour: $cl_dgrey);
+    } // Box.
+    & + label:before {
+        content: '';
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 20px;
+        height: 20px;
+        background: white;
+        border: 1px solid $cl_grey;
+    } // Box hover
+    &:hover + label:before {
+        background: $cl_grey;
+    } // Box focus
+    &:focus + label:before {
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    } // Box checked
+    &:checked + label:before {
+        background: $cl_grey;
+    } // Disabled state label.
+    &:disabled + label {
+        color: #b8b8b8;
+        cursor: auto;
+    } // Disabled box.
+    &:disabled + label:before {
+        box-shadow: none;
+        background: #ddd;
+    } // Checkmark. Could be replaced with an image
+    &:checked + label:after {
+        content: 'X';
+        position: absolute;
+        left: 6px;
+        top: 0px;
+        color: $cl_dgrey;
+        width: 2px;
+        height: 2px;
+    }
+    &-active {
+        & + label:before {
+            background: $cl_grey;
+        }
+        & + label:after {
+            content: 'X';
+            position: absolute;
+            left: 6px;
+            top: 0px;
+            color: $cl_dgrey;
+            width: 2px;
+            height: 2px;
+        }
+    }
+}

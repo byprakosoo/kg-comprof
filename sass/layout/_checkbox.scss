@@ -1,0 +1,50 @@
+.checkbox {
+    li {
+        display: block;
+        position: relative;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        padding: 15px 0 !important;
+        margin: 2px 50px !important;
+    }
+
+    input[type=checkbox]+label:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 12px;
+        left: -30px;
+        border: 1px solid $cl_dgrey;
+        background: $cl_grey;
+    }
+
+    /* unchecked icon */
+    input[type=checkbox]+label:before {
+        letter-spacing: 10px;
+    }
+
+    /* space between checkbox and label */
+    input[type=checkbox]:checked+label:before {
+        content: "X";
+        font-size: 16px;
+        line-height: 1;
+        padding-left: 4.25px;
+        padding-top: 2.25px;
+        font-family: $font_primary;
+        font-weight: 400;
+        color: $cl_dgrey;
+    }
+
+    /* checked icon */
+    input[type=checkbox]:checked+label:before {
+        letter-spacing: 5px;
+    }
+
+    /* allow space for check mark */
+}

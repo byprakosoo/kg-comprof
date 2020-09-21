@@ -1,0 +1,114 @@
+.csr {
+    &__wrapper {
+        text-align: center;
+        margin: 0px 0 0px;
+
+        .panel__text__wrapper {
+            display: table;
+            margin: 0;
+        }
+        .panel__text{
+            margin: 10px 0;
+            margin-bottom: 25px;
+        }
+    }
+    &Dk{
+        .tabs__hero--slider img{
+            width: 100%;
+        }
+        .panel{
+            &__img{
+                padding-right: 40px;
+            }
+            &__text{
+                color: #707070;
+            }
+            &__paragraph{
+                margin-top: 20px;
+                img{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    &__logo {
+        img {
+            max-width: 100%;
+            @include max-responsive($mntablet){
+                max-width: 255px;
+            }
+        }
+    }
+
+    &__tagline {
+        font: 500 26px/1.5 $font_title;
+        color: $cl_dgrey;
+        width: 75%;
+        margin: 45px auto 0;
+        @include max-responsive($mntablet){
+            font-size: 16px;
+        }
+    }
+
+    &__tabs {
+        margin: 5px 0 0;
+    }
+
+    &__bottom {
+        position: absolute;
+        bottom: 0;
+        height: 314px;
+        width: 100%;
+        z-index: -1;
+        background: url('../img/csr-bottom.jpg');
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    &Gate {
+        padding: 100px 0;
+        background: url('../img/bg-csr.jpg') no-repeat;
+        background-size: cover;
+
+        &__logo {
+            text-align: center;
+            border-top: 1px solid #dedede;
+            border-bottom: 1px solid #dedede;
+            width: 85%;
+            margin: 50px auto;
+            padding: 75px 0;
+        }
+
+        &__tagline {
+            font: 600 26px/1.5 $font_title;
+            color: white;
+            padding: 0 20px;
+            text-align: center;
+            @include max-responsive($mntablet){
+                font-size: 18px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            margin: 35px 0;
+            padding: 0 50px;
+            @include max-responsive($mntablet){
+                flex-direction: column;
+            }
+        }
+        &__item{
+            margin: 20px 0;
+            text-align: center;
+            @include max-responsive($mxphone){
+                &:first-child{
+                    transform: scale(1.25);
+                }
+                &:last-child{
+                    transform: scale(1.25);
+                }
+            }
+        }
+    }
+}

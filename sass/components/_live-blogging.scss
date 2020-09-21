@@ -1,0 +1,53 @@
+.live-blogging {
+    margin: 20px 0 0;
+    a{
+    	color: $cl_black;
+    	&:hover{
+    		color: $cl_blue;
+    	}
+    }
+    &__gate{
+    	position: relative;
+	    margin: 10px 0;
+	    min-height: 40px;
+	    display: table;
+	    width: 100%;
+	    border-top: 1px solid #ebebeb;
+    	border-bottom: 1px solid #ebebeb;
+    }
+    &__label{
+		padding: 11px 20px 11px;
+	    background: $cl_blue;
+	    position: absolute;
+	    color: #fff;
+	    font-family: $font_child;
+		font-size: 13px;
+    	font-weight: 700;
+    	-webkit-animation: bgcolorchange 4s infinite;
+  		animation: 4s infinite bgcolorchange;
+	    &:after{
+	    	content: "";
+		    width: 0px;
+		    height: 0px;
+		    border-top: 20px solid transparent;
+		    border-bottom: 20px solid transparent;
+		    border-left: 10px solid $cl_blue;
+		    position: absolute;
+		    right: -10px;
+		    top: 0;
+	    }
+    }
+    &__text{
+    	font-size: 12px;
+        padding: 9px 0;
+    	padding-left: 150px;
+	    display: table-cell;
+	    vertical-align: middle;
+	    
+    }
+    &__hour{
+		font-size: 16px;
+	    font-weight: 700;
+	    padding: 0 20px;
+    }
+}

@@ -1,0 +1,81 @@
+.read {
+    display: block;
+    position: relative;
+    margin: auto;
+    font-family: $font_body;
+    &__share{
+        float: left;
+    }
+    &__hero {
+        display: block;
+        max-width: inherit;
+        margin: 20px 0;
+        transform: translateY(-80px);
+    }
+    &__wrapper{
+        transform: translateY(-80px);
+        @include max-responsive($mntablet){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__image {
+        display: block;
+        overflow: hidden;
+        max-height: 370px;
+        img{
+            width: 100%;
+        }
+    }
+    &__title {
+        font-family: $font_primary;
+        color: $cl_blue;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 1.2;
+        @include max-responsive($mxphone){
+            font-size: 30px;
+        }
+    }
+    &__caption {
+        margin: 20px;
+        color: $cl_lgrey;
+    }
+    &__date {
+        color: $cl_lgrey;
+        font-weight: 500;
+        margin: 20px 0 10px; 
+        display: block;
+    }
+    &__intro {
+        color: #9c9c9c;
+    }
+    &__content {
+        width: 575px;
+        margin: 20px auto;
+        //        font-family: $font_primary;
+        @include max-responsive($mntablet){
+            width: 100%;
+        }
+    }
+    &__paragraph {
+        width: 575px;
+        margin: 20px auto;
+        @include max-responsive($mntablet){
+            width: 100%;
+        }
+        p {
+            line-height: 2;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    }
+    &__recommendation{
+        margin: 50px auto;
+        h3{
+            font: 700 21px/1.2 $font_primary;
+            color: $cl_blue;
+            padding-left: 10px;
+        }
+    }
+}

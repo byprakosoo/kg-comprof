@@ -1,0 +1,204 @@
+.accordion {
+    border: 1px solid $cl_grey;
+    background: none;
+    box-shadow: none;
+    &__hero {
+        background: $cl_grey;
+        text-align: left;
+        padding: 15px 15px;
+        border: 1px solid $cl_grey;
+        border-bottom: none;
+        &--text {
+            @include font-pack($family: $font_primary, $size: 15px, $weight: 700, $lh: false, $colour: $cl_lblue);
+           text-transform: uppercase;
+        }
+    }
+    &__filter {
+        &--contact {
+            label {
+                margin: 5px auto !important;
+            }
+            li {
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.accordion:last-child {
+    border-bottom: none;
+}
+
+.accordion__group > .accordion:first-child .accordion__heading {
+    border-radius: 4px 4px 0 0;
+}
+
+.accordion__group .accordion {
+    border-radius: 0;
+}
+
+.accordion__group .accordion + .accordion {
+    margin-top: 0;
+}
+
+.accordion__group {
+    border: 1px solid #e5e5e5;
+    background: #f2eeee;
+    z-index: 13;
+    position: relative;
+    &--white {
+        background: white;
+        .accordion__heading {
+            background: white;
+        }
+        .accordion__group {
+            background: white;
+        }
+        .accordion__body {
+            background: white;
+        }
+    }
+    .pnl{
+        // padding-bottom: 20px;
+        &:last-child{
+            .accordion__title a{
+                border-bottom: none !important  ;            
+            }
+        }
+    }
+}
+
+.accordion__heading {
+    background: #f2eeee;
+    border: 1px solid $cl_grey;
+    border-radius: 0;
+    border: none;
+    color: $cl_dgrey;
+    padding: 0;
+    &--border {
+        //        border: 1px solid $cl_grey;
+    }
+}
+
+
+
+.accordion__title a {
+    display: block;
+    padding: 15px;
+    position: relative;
+    @include font-pack($family: $font_primary, $size: 15px, $weight: 600, $lh: false, $colour: $cl_dgrey);
+    border-bottom: 1px solid $cl_grey;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.accordion__title--contact {
+    a {
+        margin-right: 0px;
+        font-family: $font_primary;
+        font-weight: 400;
+        text-align: left;
+        color: $cl_dgrey;
+        letter-spacing: 2px;
+        margin: 5px 0;
+        border: none;
+        padding-left: 10px;
+    }
+}
+
+
+.accordion__body {
+    background: #f2eeee;
+    display: inline-block;
+}
+
+.accordion:last-child .accordion__body {
+    border-radius: 0 0 4px 4px;
+}
+
+.accordion:last-child .accordion__heading {
+    border-radius: 0 0 4px 4px;
+    transition: border-radius 0.3s linear 0.2s;
+}
+
+.accordion:last-child .accordion__heading.active {
+    border-radius: 0;
+    transition: border-radius linear 0s;
+}
+
+/* #bs-collapse icon scale option */
+
+.accordion__heading a:before {
+    content: '';
+    position: absolute;
+    bottom: 45%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 10px 8px 0;
+    border-color: transparent $cl_dgrey transparent transparent;
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+
+.accordion__heading.active a:before {
+    content: ' ';
+    transition: all 0.5s;
+    transform: scale(0);
+}
+
+#bs-collapse .accordion__heading a:after {
+    content: '';
+    position: absolute;
+    bottom: 45%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 10px 8px 0;
+    border-color: transparent $cl_dgrey transparent transparent;
+}
+
+#bs-collapse .accordion__heading.active a:after {
+    content: '\e909';
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+/* #accordion rotate icon option */
+
+#accordion .accordion__heading a:before {
+    content: '';
+    position: absolute;
+    bottom: 40%;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 8px 0px 8px;
+    border-color: $cl_dgrey transparent transparent transparent;
+}
+
+#accordion .accordion__heading.active a:before {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+.collapse:not(.show) {
+    display: none
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height .35s ease
+}
+
+@media screen and (prefers-reduced-motion:reduce) {
+    .collapsing {
+        transition: none
+    }
+}

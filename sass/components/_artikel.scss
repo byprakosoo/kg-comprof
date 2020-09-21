@@ -1,0 +1,112 @@
+.artikel{
+	display: inline-block;
+	height: 223px;
+	min-width: 738px;
+    overflow: hidden;
+	&-foot{
+		position: relative;
+	    bottom: 35px;
+		padding: 0 20px;
+    	z-index: 2;
+	}
+	&--left{
+		max-width: 63%;
+		float: left;
+	}
+	&--right{
+	    text-align: right;
+	    float: right;
+	}
+	&--left, &--right{
+		display: inline-block;
+	}
+	&--tag{
+		font-family: $font_child;
+		font-size: 10px;
+    	font-weight: 400;
+		color: $cl_white;
+		text-transform: uppercase;
+		span{
+			background: #71c2ea;
+			padding: 2px 12px;
+			letter-spacing: 1px;
+			white-space: nowrap;
+		}
+		&-green span{
+			background: #b8da8a;
+		}
+	}
+	&--count{
+		font-family: $font_child;
+		font-weight: 400;
+	    font-size: 11px;
+	    line-height: 17px;
+	    color: #d1d1d1;
+	    overflow: hidden;
+	    height: 19px;
+	    // min-width: 203px;
+    	&__item{
+    		display: inline-block;
+		    float: left;
+		    margin: 0 10px;
+		    &:last-child{
+		    	margin-right: 0;
+		    }
+		    a{
+		    	color: #61b5e5;
+		    }
+		    .icon{
+		        display: inline-block;
+			    float: left;
+				margin-top: 1px;
+    			margin-right: 15px;
+		    }
+    	}
+	}
+	&--img{
+		width: 54.2%;
+    	float: left;
+    	display: inline-block;
+    	overflow: hidden;
+    	img{
+			width: auto;
+			height: auto;
+			overflow: hidden;
+			@include min-responsive($grid_desktop_large) {
+				height: auto;
+				width: 100%;
+			}
+		}
+		&:hover .artikel--content h2{
+			color: $cl_blue;
+		}
+	}
+	&--content{
+		padding: 0 20px;
+	    width: 45.8%;
+	    float: left;
+	    display: inline-block;
+		max-height: 172px;
+    	overflow: hidden;
+	}
+	&--large{
+		height: auto;
+    	overflow: hidden;
+    	margin-top: 20px;
+    	max-width: 100%;
+    	min-width: inherit;
+		.artikel--img{
+			width: 100%;
+			float: none;
+			overflow: hidden;
+			img{
+			    height: auto;
+			}
+		}
+		.artikel--content{
+			padding: 0;
+		    width: 100%;
+		    float: none;
+		}
+	}
+}

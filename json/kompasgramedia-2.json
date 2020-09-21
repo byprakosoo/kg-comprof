@@ -1,0 +1,1000 @@
+{
+  "master": {
+    "site": "Kompas Gramedia | Indonesia's Media Company"
+  },
+  "menu": [
+    {
+      "title": "Beranda",
+      "link": "index.html",
+      "head": "Kompas Gramedia | Indonesia's Media Company"
+    },
+    {
+      "title": "Tentang KG",
+      "link": "index.html#about",
+      "head": "Message from Kompas Gramedia CEO, LILIK OETAMA",
+      "submenu": [
+        {
+          "title": "Pesan CEO",
+          "link": "ceo-message.html",
+          "head": "Message from Kompas Gramedia CEO, LILIK OETAMA"
+        },
+        {
+          "title": "Visi dan Misi",
+          "link": "vision-mission.html",
+          "head": "Kompas Gramedia Vision, Mission & Values"
+        },
+        {
+          "title": "Pimpinan KG",
+          "link": "management.html",
+          "head": "Kompas Gramedia Management Team"
+        }
+      ]
+    },
+    {
+      "title": "Brand",
+      "link": "brand.html",
+      "head": "Kompas Gramedia Brands"
+    },
+    {
+      "title": "Bisnis",
+      "link": "index.html#business",
+      "head": "Kompas Gramedia Business Line",
+      "submenu": [
+        {
+          "title": "Media",
+          "link": "media.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Retail & Publishing",
+          "link": "retail-publishing.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Hospitality",
+          "link": "hospitality.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Manufacture",
+          "link": "manufacture.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Education",
+          "link": "education.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Event & Venue",
+          "link": "event-venue.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Property & Infrastructure",
+          "link": "property-infrastructure.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+		{
+          "title": "Digital",
+          "link": "digital.html",
+          "head": "Kompas Gramedia Business Line"
+        }
+      ]
+    },
+    {
+      "title": "Kontribusi Sosial",
+      "link": "index.html#csr",
+      "head": "Kompas Gramedia Community Development",
+      "submenu": [
+          {
+              "title": "Kontribusi Sosial",
+              "link": "csr.html",
+              "head": "Kompas Gramedia Community Development"
+          },
+          {
+              "title": "Dana Kemanusiaan Kompas",
+              "link": "csr-danakemanusiaan.html",
+              "head": "Kompas Gramedia Community Development"
+          }
+      ]
+    },
+    {
+      "title": "Ruang Media",
+      "link": "index.html#news",
+      "head": "Latest Update from Kompas Gramedia",
+      "submenu": [
+        {
+          "title": "Berita",
+          "link": "news.html",
+          "head": "Latest Update from Kompas Gramedia"
+        }
+      ]
+    },
+    {
+      "title": "Karir",
+      "link": "index.html#karir",
+      "head": "Career at Kompas Gramedia",
+      "submenu": [
+        {
+          "title": "Grow With KG",
+          "link": "career.html",
+          "head": "Career at Kompas Gramedia"
+        },
+        {
+          "title": "Komunitas Karyawan",
+          "link": "community.html",
+          "head": "Community at Kompas Gramedia"
+        }
+      ]
+    },
+    {
+      "title": "Hubungi Kami",
+      "link": "index.html#contact",
+      "head": "Contact Kompas Gramedia"
+    }
+  ],
+  "menu_en": [
+    {
+      "title": "Home",
+      "link": "index.html",
+      "head": "Kompas Gramedia | Indonesia's Media Company"
+    },
+    {
+      "title": "About",
+      "link": "ceo-message.html",
+      "head": "Message from Kompas Gramedia CEO, LILIK OETAMA",
+      "submenu": [
+        {
+          "title": "CEO Message",
+          "link": "ceo-message.html",
+          "head": "Message from Kompas Gramedia CEO, LILIK OETAMA"
+        },
+        {
+          "title": "Vision and Mission",
+          "link": "vision-mission.html",
+          "head": "Kompas Gramedia Vision, Mission & Values"
+        },
+        {
+          "title": "Our Management",
+          "link": "management.html",
+          "head": "Kompas Gramedia Management Team"
+        }
+      ]
+    },
+    {
+      "title": "Brands",
+      "link": "brand.html",
+      "head": "Kompas Gramedia Brands"
+    },
+    {
+      "title": "Business",
+      "link": "business.html",
+      "head": "Kompas Gramedia Business Line",
+      "submenu": [
+        {
+          "title": "Media",
+          "link": "media.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Retail & Publishing",
+          "link": "retail-publishing.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Hospitality",
+          "link": "hospitality.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Manufacture",
+          "link": "manufacture.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Education",
+          "link": "education.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Event & Venue",
+          "link": "event-venue.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+        {
+          "title": "Property & Infrastructure",
+          "link": "property-infrastructure.html",
+          "head": "Kompas Gramedia Business Line"
+        },
+		{
+          "title": "Others",
+          "link": "bisnis-others.html",
+          "head": "Kompas Gramedia Business Line"
+        }
+      ]
+    },
+    {
+      "title": "CSR",
+      "link": "csr.html",
+      "head": "Kompas Gramedia Community Development",
+      "submenu": [
+          {
+              "title": "CSR",
+              "link": "csr.html",
+              "head": "Kompas Gramedia Community Development"
+          },
+          {
+              "title": "Kompas Humanitarian Fund",
+              "link": "csr-danakemanusiaan.html",
+              "head": "Kompas Gramedia Community Development"
+          }
+      ]
+    },
+      
+    {
+      "title": "Media Room",
+      "link": "news.html",
+      "head": "Latest Update from Kompas Gramedia",
+      "submenu": [
+        {
+          "title": "News",
+          "link": "news.html",
+          "head": "Latest Update from Kompas Gramedia"
+        }
+      ]
+    },
+    {
+      "title": "Career",
+      "link": "career.html",
+      "head": "Career at Kompas Gramedia",
+      "submenu": [
+        {
+          "title": "Grow With KG",
+          "link": "career.html",
+          "head": "Career at Kompas Gramedia"
+        },
+        {
+          "title": "Employee Communities",
+          "link": "community.html",
+          "head": "Community at Kompas Gramedia"
+        }
+      ]
+    },
+    {
+      "title": "Contact Us",
+      "link": "contact.html",
+      "head": "Contact Kompas Gramedia | Hubungi Kami"
+    }
+  ],
+  "history": [
+    {
+      "tahun": 1963,
+      "logo": "intisari",
+      "title": "intisari",
+      "color": "1blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1965,
+      "logo": "kompas",
+      "title": "harian kompas",
+      "color": "2blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1970,
+      "logo": "gramedia",
+      "title": "toko gramedia",
+      "color": "3blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1972,
+      "logo": "gramedia-print",
+      "title": "gramedia printing",
+      "color": "4blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1972,
+      "logo": "sonora",
+      "title": "sonora-radio",
+      "color": "5blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1973,
+      "logo": "bobo",
+      "title": "bobo",
+      "color": "6blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1974,
+      "logo": "gramedia-publish",
+      "title": "gramedia pustaka utama",
+      "color": "1blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1981,
+      "logo": "santika",
+      "title": "hotel santika",
+      "color": "2blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1984,
+      "logo": "bola",
+      "title": "tabloid bola",
+      "color": "3blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1985,
+      "logo": "elex",
+      "title": "elex media komputindo",
+      "color": "4blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1987,
+      "logo": "tribun",
+      "title": "tribun group",
+      "color": "5blue",
+      "tanggal": "1987 - 1964"
+    },
+    {
+      "tahun": 1995,
+      "logo": "kompascom",
+      "title": "kompas.com",
+      "color": "2blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1996,
+      "logo": "gku",
+      "title": "graha kerindo utama",
+      "color": "6blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1996,
+      "logo": "kontan",
+      "title": "kontan",
+      "color": "1blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1999,
+      "logo": "warta-kota",
+      "title": "warta kota",
+      "color": "3blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 2007,
+      "logo": "umn",
+      "title": "universitas multimedia nusantara",
+      "color": "4blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 2011,
+      "logo": "kompas-tv",
+      "title": "kompas tv",
+      "color": "5blue",
+      "tanggal": ""
+    }
+  ],
+  "history_en": [
+    {
+      "tahun": 1963,
+      "logo": "intisari",
+      "title": "intisari",
+      "color": "1blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1965,
+      "logo": "kompas",
+      "title": "harian kompas",
+      "color": "2blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1970,
+      "logo": "gramedia",
+      "title": "toko buku gramedia",
+      "color": "3blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1972,
+      "logo": "gramedia-print",
+      "title": "gramedia printing",
+      "color": "4blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1972,
+      "logo": "sonora",
+      "title": "sonora-radio",
+      "color": "5blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1973,
+      "logo": "bobo",
+      "title": "bobo",
+      "color": "6blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1974,
+      "logo": "gramedia-publish",
+      "title": "gramedia pustaka utama",
+      "color": "1blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1981,
+      "logo": "santika",
+      "title": "hotel santika",
+      "color": "2blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1984,
+      "logo": "bola",
+      "title": "tabloid bola",
+      "color": "3blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1985,
+      "logo": "elex",
+      "title": "elex media komputindo",
+      "color": "4blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1987,
+      "logo": "tribun",
+      "title": "tribun group",
+      "color": "5blue",
+      "tanggal": "1987 - 1964"
+    },
+      {
+      "tahun": 1995,
+      "logo": "kompascom",
+      "title": "kompas.com",
+      "color": "2blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1996,
+      "logo": "gku",
+      "title": "graha krindo utama",
+      "color": "6blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1996,
+      "logo": "kontan",
+      "title": "kontan",
+      "color": "1blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 1999,
+      "logo": "warta-kota",
+      "title": "warta kota",
+      "color": "3blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 2007,
+      "logo": "umn",
+      "title": "universitas multimedia nusantara",
+      "color": "4blue",
+      "tanggal": ""
+    },
+    {
+      "tahun": 2011,
+      "logo": "kompas-tv",
+      "title": "kompas tv",
+      "color": "5blue",
+      "tanggal": ""
+    }
+  ],
+  "media": [
+    {
+      "title": "Berdasarkan Genre",
+      "status": "active",
+      "collapse": "collapseOne",
+      "heading": "headingOne",
+      "submenu": [
+        {
+          "title": "Berita Nasional",
+          "status": "active",
+          "no": 1
+        },
+        {
+          "title": "Berita Regional",
+          "status": "",
+          "no": 2
+        },
+        {
+          "title": "Berita Hiburan",
+          "status": "",
+          "no": 3
+        },
+        {
+          "title": "Siaran Radio",
+          "status": "",
+          "no": 4
+        },
+        {
+          "title": "Media Servis",
+          "status": "",
+          "no": 5
+        },
+          {
+          "title": "Minat Khusus",
+          "status": "",
+          "no": 6
+        }
+      ]
+    },
+    {
+      "title": "Berdasarkan Platform",
+      "status": "",
+      "collapse": "collapseTwo",
+      "heading": "headingTwo",
+      "submenu": [
+        {
+          "title": "Print",
+          "status": "",
+          "no": 7
+        },
+        {
+          "title": "Online",
+          "status": "",
+          "no": 8
+        },
+        {
+          "title": "Broadcast",
+          "status": "",
+          "no": 9
+        }
+      ]
+    },
+    {
+      "title": "Berdasarkan Frekuensi Terbit",
+      "status": "",
+      "collapse": "collapseThree",
+      "heading": "headingThree",
+      "submenu": [
+        {
+          "title": "Harian",
+          "status": "",
+          "no": 10
+        },
+        {
+          "title": "Periodik Bulanan",
+          "status": "",
+          "no": 11
+        },
+        {
+          "title": "Periodik Mingguan",
+          "status": "",
+          "no": 12
+        },
+        {
+          "title": "Periodik 2x Seminggu",
+          "status": "",
+          "no": 13
+        },
+        {
+          "title": "Periodik Dwimingguan (2 minggu sekali)",
+          "status": "",
+          "no": 14
+        },
+        {
+          "title": "Periodik Dwibulanan (2 bulan sekali)",
+          "status": "",
+          "no": 15
+        }
+      ]
+    },
+    {
+      "title": "Berdasarkan Kategori Audiens",
+      "status": "",
+      "collapse": "collapseFour",
+      "heading": "headingFour",
+      "submenu": [
+        {
+          "title": "Umum",
+          "status": "",
+          "no": 16
+        },
+        {
+          "title": "Pria",
+          "status": "",
+          "no": 17
+        },
+        {
+          "title": "Wanita",
+          "status": "",
+          "no": 18
+        },
+        {
+          "title": "Remaja",
+          "status": "",
+          "no": 19
+        },
+        {
+          "title": "Anak-Anak",
+          "status": "",
+          "no": 20
+        },
+        {
+          "title": "Dewasa Muda",
+          "status": "",
+          "no": 21
+        }
+      ]
+    },
+    {
+      "title": "Berdasarkan Jenis Informasi",
+      "status": "",
+      "collapse": "collapseFive",
+      "heading": "headingFive",
+      "submenu": [
+        {
+          "title": "Umum",
+          "status": "",
+          "no": 22
+        },
+        {
+          "title": "Olahraga",
+          "status": "",
+          "no": 23
+        },
+        {
+          "title": "Gaya Hidup",
+          "status": "",
+          "no": 24
+        },
+        {
+          "title": "Hobi",
+          "status": "",
+          "no": 25
+        },
+        {
+          "title": "Bisnis & Ekonomi",
+          "status": "",
+          "no": 26
+        },
+        {
+          "title": "Keluarga",
+          "status": "",
+          "no": 27
+        },
+        {
+          "title": "Hiburan",
+          "status": "",
+          "no": 28
+        },
+        {
+          "title": "Sains",
+          "status": "",
+          "no": 29
+        },
+        {
+          "title": "Teknologi",
+          "status": "",
+          "no": 30
+        },
+        {
+          "title": "Tips & Trik",
+          "status": "",
+          "no": 31
+        },
+        {
+          "title": "Kesehatan",
+          "status": "",
+          "no": 32
+        },
+        {
+          "title": "News",
+          "status": "",
+          "no": 33
+        }
+      ]
+    }
+  ],
+  "media_en": [
+    {
+      "title": "Based on Genre",
+      "status": "active",
+      "collapse": "collapseOne",
+      "heading": "headingOne",
+      "submenu": [
+        {
+          "title": "National News",
+          "status": "active",
+          "no": 1
+        },
+        {
+          "title": "Regional News",
+          "status": "",
+          "no": 2
+        },
+        {
+          "title": "Entertainment News",
+          "status": "",
+          "no": 3
+        },
+        {
+          "title": "Radio Broadcast",
+          "status": "",
+          "no": 4
+        },
+        {
+          "title": "Media Services",
+          "status": "",
+          "no": 5
+        },
+          {
+          "title": "Special Interest",
+          "status": "",
+          "no": 6
+        }
+      ]
+    },
+    {
+      "title": "Based on Plaform",
+      "status": "",
+      "collapse": "collapseTwo",
+      "heading": "headingTwo",
+      "submenu": [
+        {
+          "title": "Print",
+          "status": "",
+          "no": 7
+        },
+        {
+          "title": "Online",
+          "status": "",
+          "no": 8
+        },
+        {
+          "title": "Broadcast",
+          "status": "",
+          "no": 9
+        }
+      ]
+    },
+    {
+      "title": "Based on Publish Frequency",
+      "status": "",
+      "collapse": "collapseThree",
+      "heading": "headingThree",
+      "submenu": [
+        {
+          "title": "Daily",
+          "status": "",
+          "no": 10
+        },
+        {
+          "title": "Monthly",
+          "status": "",
+          "no": 11
+        },
+        {
+          "title": "Weekly",
+          "status": "",
+          "no": 12
+        },
+        {
+          "title": "Twice a week",
+          "status": "",
+          "no": 13
+        },
+        {
+          "title": "Bi-Weekly",
+          "status": "",
+          "no": 14
+        },
+        {
+          "title": "Bi-Monthly",
+          "status": "",
+          "no": 15
+        }
+      ]
+    },
+    {
+      "title": "Based on Audiences",
+      "status": "",
+      "collapse": "collapseFour",
+      "heading": "headingFour",
+      "submenu": [
+        {
+          "title": "General",
+          "status": "",
+          "no": 16
+        },
+        {
+          "title": "Man",
+          "status": "",
+          "no": 17
+        },
+        {
+          "title": "Woman",
+          "status": "",
+          "no": 18
+        },
+        {
+          "title": "Teenagers",
+          "status": "",
+          "no": 19
+        },
+        {
+          "title": "Children",
+          "status": "",
+          "no": 20
+        },
+        {
+          "title": "Young Adult",
+          "status": "",
+          "no": 21
+        }
+      ]
+    },
+    {
+      "title": "Based on Information",
+      "status": "",
+      "collapse": "collapseFive",
+      "heading": "headingFive",
+      "submenu": [
+        {
+          "title": "General Information",
+          "status": "",
+          "no": 22
+        },
+        {
+          "title": "Sport",
+          "status": "",
+          "no": 23
+        },
+        {
+          "title": "Life Style",
+          "status": "",
+          "no": 24
+        },
+        {
+          "title": "Hobby",
+          "status": "",
+          "no": 25
+        },
+        {
+          "title": "Business & Economy",
+          "status": "",
+          "no": 26
+        },
+        {
+          "title": "Family",
+          "status": "",
+          "no": 27
+        },
+        {
+          "title": "Entertainment",
+          "status": "",
+          "no": 28
+        },
+        {
+          "title": "Sains",
+          "status": "",
+          "no": 29
+        },
+        {
+          "title": "Technology",
+          "status": "",
+          "no": 30
+        },
+        {
+          "title": "Tips & Trick",
+          "status": "",
+          "no": 31
+        },
+        {
+          "title": "Health",
+          "status": "",
+          "no": 32
+        },
+        {
+          "title": "News",
+          "status": "",
+          "no": 33
+        }
+      ]
+    }
+  ],
+  "filter": [
+    {
+      "title": "Kompas"
+    },
+      {
+      "title": "Kontan"
+    },
+      {
+      "title": "Kontan Id"
+    },
+      {
+      "title": "Kontan Tabloid"
+    },
+      {
+      "title": "Kompas.com"
+    },
+      {
+      "title": "Donal"
+    },
+      {
+      "title": "Jip"
+    },
+      {
+      "title": "Kompasiana"
+    },
+      {
+      "title": "Kompas Karier"
+    },
+      {
+      "title": "Kompas TV"
+    },
+      {
+      "title": "KTV"
+    },
+      {
+      "title": "Press Release"
+    },
+      {
+      "title": "Bobo"
+    },
+      {
+      "title": "Mombi"
+    },
+      {
+      "title": "Idea"
+    },
+      {
+      "title": "Infokompuer"
+    },
+      {
+      "title": "Intisari"
+    },
+      {
+      "title": "National Geographic"
+    },
+      {
+      "title": "Sedap Pemuda"
+    },
+      {
+      "title": "Sedap"
+    },
+      {
+      "title": "Nova"
+    },
+      {
+      "title": "Otomotif"
+    },
+      {
+      "title": "Saji"
+    },
+      {
+      "title": "Fotokita"
+    }
+  ]
+}

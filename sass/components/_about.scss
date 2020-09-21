@@ -1,0 +1,61 @@
+.about {
+    min-height: 100vh;
+    background: url('../img/bg-about.jpg') no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+
+    @include max-responsive($mxtablet) {
+        min-height: 45vh;
+    }
+
+    @include max-responsive($mntablet) {
+        background-position: right;
+        padding: 150px 0;
+    }
+
+    &__content {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 10%;
+            width: 100px;
+            height: 82px;
+            background: url('../img/quote.svg');
+            background-size: 100px 82px;
+            
+            @include max-responsive($mntablet) {
+                top: -100px;
+                right: 50%;
+                transform: translateX(50%);
+                width: 75px;
+                height: 68px;
+                background-size: 75px 68px;
+            }
+        }
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 100px;
+            height: 82px;
+            background: url('../img/quote.svg');
+            background-size: 100px 82px;
+            
+            @include max-responsive($mntablet) {
+                bottom: -100px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 75px;
+                height: 68px;
+                background-size: 75px 68px;
+            }
+        }
+    }
+}

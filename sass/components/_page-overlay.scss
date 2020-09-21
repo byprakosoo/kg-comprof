@@ -1,0 +1,75 @@
+.page__overlay {
+    position: fixed;
+    z-index: 100001;
+    width: 616px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -285px;
+    height: 616px;
+    border: 8px solid #edeef0;
+    overflow: hidden;
+    @include max-responsive($mntablet){
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        top: 15%;
+    }
+    img {
+        width: 100%;
+    }
+    
+    &--slider {
+//        width: 640px;
+        height:616px;
+        @include max-responsive($mntablet){
+            height: 283px;
+            margin-bottom: 0;
+        }
+        .slick-arrow {
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            color: #0e357b;
+            font-size: 30px;
+            background: #edeef0;
+            padding: 5px;
+            opacity: 0;
+            transition: .2s all ease-in-out;
+            
+            &.icon-right {
+                right: 0;
+            }
+        }
+        
+        &:hover {
+            .slick-arrow {
+                opacity: 1;
+            }
+        }
+        
+        .slick-dots {
+            bottom: 20px;
+            li {
+                button {
+                    &:before {
+                        font-size: 40px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    
+    &--close {
+        cursor: pointer;
+        position: absolute;
+        z-index: 10;
+        right: -4px;
+        top: -4px;
+        background: #eee;
+        padding: 5px;
+    }
+}

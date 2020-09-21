@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head page="History"}}
+
+<body>
+
+    {{>header page="Tentang KG"}}
+    <!-- s:panel -->
+    <div id="panel" class="history__bg">
+        <div class="container history clearfix">
+            <div class="panel__wrapper mr50">
+                <div class="panel__title panel__title--right">
+                    <h1 class="panel__title__text">Sejarah</h1>
+                </div>
+            </div>
+            <div class="panel__wrapper text-center">
+                <div class="history__img history__img--top" id="parallaxText">
+                    <img src="asset/img/hexlite-bor.png" alt="hexlite-bor.png" class="history__img__parallax layer1">
+                    <img src="asset/img/hexblue-bor.png" alt="hexblue-bor.png" class="history__img__parallax layer2">
+                    <img src="asset/img/history-top.png" alt="history-top.png" class="history__img__parallax layer3">
+                    <div class="history__img__title hidden">
+                        <p class="history__img__text">Gedung Perintis <br>Kompas Gramedia</p>
+                    </div>
+                </div>
+                <div class="timeline" id="inline-popups">
+                    <ul>
+                        {{#each history}}
+                        <li class="history__list">
+                            <div class="history__item history__item--{{tahun}}">
+                                <div class="history__content">
+                                    <span class="history__connector"><span></span></span>
+                                    <h2 class="history__year">{{tahun}}</h2>
+                                    <img class="history__logo" src="asset/img/history/logo-{{logo}}.jpg" alt="logo-{{logo}}.jpg" />
+                                    <h3 class="history__title">{{title}}</h3>
+                                </div>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <p class="history__timeline__bottom">Terus Bertumbuh ...</p>
+                </div>
+                <div class="history__img history__img--bottom"><img src="asset/img/history-bottom.png" alt="history-bottom.png"></div>
+            </div>
+        </div>
+    </div>
+    <!-- e:panel -->
+    {{>footer}} {{>script}}
+     <script>
+        //scrollmagic
+
+        var controller = new ScrollMagic.Controller({
+            vertical: true
+        });
+        // build tween
+        var tween = new TimelineMax()
+            .add([
+                TweenMax.fromTo("#parallaxText .layer1", 1, {
+                    top: -16
+                }, {
+                    top: 316,
+                    ease: Linear.easeNone
+                }),
+                TweenMax.fromTo("#parallaxText .layer2", 1, {
+                    top: 146
+                }, {
+                    top: -256,
+                    ease: Linear.easeNone
+                })
+            ]);
+
+        // build scene
+        var scene = new ScrollMagic.Scene({
+                triggerElement: "#trigger2",
+                duration: $(window).width()
+            })
+            .setTween(tween)
+            .addTo(controller);
+
+    </script>
+</body>
+
+</html>

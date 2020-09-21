@@ -1,0 +1,228 @@
+.management {
+    &__slider {
+        margin-bottom: 50px !important;
+        min-height: 57vh;
+
+        .slick-arrow {
+            position: absolute;
+            bottom: -35px;
+            right: 0px;
+            font-size: 1.5em;
+            color: white;
+            background: $cl_blue;
+            padding: 0 10px;
+        }
+
+        .icon-left {
+            right: 45px;
+        }
+
+        .slick-disabled {
+            background: $cl_fog;
+            color: $cl_blue;
+        }
+
+        &--side {
+            display: flex;
+
+            @include max-responsive($mntablet) {
+                flex-direction: column-reverse;
+            }
+        }
+
+        &__item {
+            padding-top: 20px;
+
+            @include max-responsive($mntablet) {
+                padding-top: 0;
+            }
+        }
+
+        &__content {
+            @include max-responsive($mntablet) {
+                padding: 0 !important;
+            }
+        }
+    }
+
+    &__wrapper {
+        margin: 50px 0;
+
+        @include max-responsive($mntablet) {
+            padding: 0 !important;
+        }
+    }
+
+    &__founder {
+        position: relative;
+        transform: translateY(-250px);
+
+        @include max-responsive($mntablet) {
+            transform: translateY(0);
+        }
+
+        &__title {
+            position: absolute;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: -15px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: $cl_lblue;
+            }
+
+            &.jacob {
+                bottom: 70px;
+                left: 65px;
+            }
+
+            &.ojong {
+                bottom: 0px;
+                right: 65px;
+            }
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        &__text {
+            @include font-pack($family: $font_primary, $size: 1em, $weight: 700, $lh: false, $colour: $cl_blue);
+            letter-spacing: 3px;
+
+            small {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.dggr {
+    padding-right: 2px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -2px;
+    color: $cl_blue;
+
+    &--black {
+        color: black;
+        position: absolute;
+        left: 33px;
+
+        @include max-responsive($mntablet) {
+            left: 12px;
+        }
+    }
+}
+
+#management-left {
+    visibility: hidden;
+}
+
+#management-right {
+    visibility: hidden;
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.mng {
+    &__item {
+
+        &-directors img,
+        img {
+            width: 230px;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        &__title {
+            margin: 10px;
+
+            span {
+                color: $cl_blue;
+                font-size: 12px;
+                text-transform: uppercase;
+                display: block;
+                line-height: 15px;
+                text-align: center;
+
+                &:nth-child(1) {
+                    font-weight: bolder;
+                    font-size: 14px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+.directors {
+    .slick {
+        &-next {
+            right: 25px;
+            &::before {
+                content: '' !important;
+                background: url(../img/arrow-right2.png) center / cover;
+                opacity: .9;
+                -webkit-transition: opacity 0.2s ease-in-out;
+                transition: opacity 0.2s ease-in-out;
+                height: 40px;
+                width: 70px;
+                line-height: unset;
+                position: absolute;
+                left: -10px;
+                top: 0;
+            }
+
+            .slick-arrow {
+                position: absolute;
+                right: 0;
+                top: 105px;
+                padding: 0 6px 3px;
+                width: auto;
+                height: auto;
+                font-weight: 900;
+                margin-top: 20px;
+                margin-right: 35px;
+            }
+        }
+
+        &-prev {
+            left: 0px;
+            &::before {
+                content: '' !important;
+                background: url(../img/arrow-left2.png) center / cover;
+                opacity: .9;
+                -webkit-transition: opacity 0.2s ease-in-out;
+                transition: opacity 0.2s ease-in-out;
+                height: 40px;
+                width: 70px;
+                line-height: unset;
+                position: absolute;
+                top: 0;
+                left: -15px;
+            }
+
+            .slick-arrow {
+                position: absolute;
+                left: 0;
+                top: 105px;
+                padding: 0 6px 3px;
+                width: auto;
+                height: auto;
+                font-weight: 900;
+                margin-top: 20px;
+                margin-right: 35px;
+                z-index: 1;
+            }
+        }
+    }
+}

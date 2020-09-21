@@ -1,0 +1,20 @@
+.notfound{
+    padding-top: 5em;
+    &__wrapper{
+        color: white;
+        display: flex;
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        color: white;
+    }
+    &__big{
+        font-family: $font_title;
+        font-size: 14em;
+    }
+    &__small{
+        font-family: $font_body;
+        font-size: 1.5em;
+        // text-transform: capitalize;
+    }
+}

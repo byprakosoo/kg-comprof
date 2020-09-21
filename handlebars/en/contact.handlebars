@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head page="Hubungi Kami"}}
+
+<body>
+
+    {{>header_white_en page="Hubungi Kami"}}
+    <!-- s:panel -->
+    <div id="panel" class="contact__bg">
+       <div class="panel__ornament panel__ornament--white">
+            <img src="asset/img/bg-ornament-2.png" alt="bg-ornament-2.png" class="panel__ornament--left">
+            <img src="asset/img/bg-ornament-2.png" alt="bg-ornament-2.png" class="panel__ornament--right">
+        </div>
+        <div class="container">
+            <div class="panel__title panel__title--right pl50">
+                <h1 class="panel__title__text title-blue">Contact Us</h1>
+            </div>
+        </div>
+        <div class="container clearfix panel__side panel__side--small mt0 pt20 align-start">
+            <div class="panel__wrapper col-5">
+                <div class="panel__content pl50">
+                    <div class="panel__paragraph">
+                        <div class="panel__board">
+                            <h1 class="panel__board__name">How can we assist you?</h1>
+                        </div>
+                        <!-- s:contact form-->
+                        <div class="contact__form">
+                            <input type="text" class="contact__input" id="contact-name" placeholder="Name">
+                            <input type="text" class="contact__input" id="contact-mail" placeholder="Email">
+                            <div class="accordion__group accordion__group--white wrap" id="accordion" role="tablist" aria-multiselectable="true" id="accordion-contact">
+                                <div class="pnl">
+                                    <div class="accordion__heading  accordion__heading--border text-left" role="tab" id="headingOne">
+                                        <h4 class="accordion__title accordion__title--contact">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Topic</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="accordion__collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="accordion__body">
+                                            <ul class="accordion__filter accordion__filter--contact">
+                                                <li>
+                                                    <input type="radio" id="1-option" name="selector">
+                                                    <label for="1-option">Cooperation Proposal</label>
+                                                    <div class="check"></div>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" id="2-option" name="selector">
+                                                    <label for="2-option">Company Visit Request</label>
+                                                    <div class="check"></div>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" id="3-option" name="selector">
+                                                    <label for="3-option">Our Products/Brands</label>
+                                                    <div class="check"></div>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" id="4-option" name="selector">
+                                                    <label for="4-option">Criticism and Suggestions</label>
+                                                    <div class="check"></div>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" id="5-option" name="selector">
+                                                    <label for="5-option">Corporate Social Responsibility</label>
+                                                    <div class="check"></div>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" id="6-option" name="selector">
+                                                    <label for="6-option">Others (internship, freelance, job vacancy, etc.)</label>
+                                                    <div class="check"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <textarea class="contact__input" id="contact-question" placeholder="Question"></textarea>
+                            <div class="contact__captcha">
+                                <img src="asset/img/captcha.jpg" alt="captcha.jpg">
+                            </div>
+                            <div class="contact__btn btn--grey">
+                                <button class="button" id="contact-submit">Submit</button>
+                            </div>
+                        </div>
+                        <!-- e:contact form-->
+                    </div>
+                </div>
+            </div>
+            <div class="panel__wrapper text-right col-5">
+                   <div class="panel__side__img ml5 mt40"><img src="asset/img/contact.jpg" alt="contact.jpg"></div>
+                <div class="contact__info">
+                    <h3 class="contact__info__title">Kompas Gramedia</h3>
+                    <p class="contact__info__text">Jl. Jl. Palmerah Selatan 22-26, Jakarta 10270</p>
+                    <p class="contact__info__text">P: <a href="">+62-21-5483008</a> F: <a href="">+62-21-5494051</a> Indonesia pr@kompasgramedia.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- e:panel -->
+    {{>footer}} {{>script}}
+</body>
+
+</html>

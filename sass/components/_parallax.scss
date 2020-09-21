@@ -1,0 +1,98 @@
+.parallax {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 85vh;
+
+    @include min-responsive ($mnlarge) {
+        height: 87vh;
+    }
+    &__bg {
+        //        background: url('../img/event-bg.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    &__text {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        width: 50%;
+        color: white;
+        @include max-responsive ($mnlarge) {
+            top: 20%;
+        }
+    }
+    &__item {
+        height: 85vh;
+        @include min-responsive ($mnlarge) {
+            height: 87vh;
+        }
+    }
+
+    &__slider {
+        position: relative;
+
+        .icon-slider {
+            position: absolute;
+            z-index: 123;
+            top: 50%;
+            color: white;
+        }
+
+        .icon-left {
+            left: 0;
+        }
+
+        .icon-right {
+            right: 0;
+        }
+
+        .slick-dots {
+            bottom: 50px;
+
+            li button {
+                &::before {
+                    color: white;
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+
+    &__down {
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: 48%;
+        -webkit-animation: updown 2s infinite;
+        animation: updown 2s infinite;
+        font-size: 4em;
+        color: white;
+        cursor: pointer;
+        @include min-responsive($mnlarge){
+            left: 48.5%;
+        }
+    }
+}
+
+.jumbotron {
+    position: relative;
+    z-index: 0;
+    height: calc(100vh + 20px);
+
+    @include min-responsive ($mnlarge) {
+        height: calc(100vh + 50px)
+    }
+
+    @include min-responsive ($mdlarge) {
+        height: calc(100vh + 100px)
+    }
+    @include max-responsive(1920px){
+        // background-position-y: -375px!important;
+    }
+
+    //    background-position-y: 0 !important;
+}

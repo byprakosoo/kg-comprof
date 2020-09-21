@@ -1,0 +1,68 @@
+//base
+@import 'base/vars';
+@import 'base/font';
+@import 'base/mixins';
+@import 'base/global';
+
+@import "plugins/animate";
+@import "plugins/scrollbar";
+@import "plugins/timeline";
+@import "plugins/cd-popup";
+@import "plugins/my-popup";
+@import "plugins/aos";
+
+//Main layout 
+@import "layout/grid"; 
+@import "layout/header"; 
+@import 'layout/nav';
+@import "layout/thumbnails"; 
+@import "layout/footer"; 
+@import "layout/news"; 
+@import "layout/contact";
+@import "layout/career";
+
+//Main components
+@import "components/button";
+@import "components/slick";
+@import "components/slick-new";
+@import "components/tagline";
+@import "components/panel";
+@import "components/pagination";
+@import "components/styled-radio";
+@import "components/card";
+@import "components/tabs";
+@import "components/hexblue";
+@import "components/hexagon";
+@import "components/parallax";
+@import "components/tooltip";
+@import "components/share";
+@import "components/login";
+@import "components/brand-filter";
+@import "components/page-overlay";
+
+@import "components/language";
+@import "components/about";
+@import "components/hero";
+
+
+@import "layout/accordion"; 
+@import "layout/checkbox";
+@import "layout/normalize";
+@import "layout/business";
+@import "layout/ceo";
+@import "layout/management";
+@import "layout/vision";
+@import "layout/history";
+
+@import "layout/static";
+@import "layout/csr";
+@import "layout/menu";
+@import "layout/read";
+@import "layout/sitemap";
+@import "layout/privacy";
+@import "layout/infokita";
+@import "layout/community";
+// @import "layout/search";
+
+@import "base/override";
+

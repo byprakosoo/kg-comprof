@@ -1,0 +1,84 @@
+.brand__filter {
+    float: right;
+    margin: 55px 80px;
+    position: relative;
+    transform: translateY(100px);
+    z-index: 10;
+
+    @include max-responsive($mnphone) {
+        transform: translateY(150px);
+        margin: 0;
+        float: left;
+    }
+
+    &--srcInput {
+        position: relative;
+
+        .icon {
+            position: absolute;
+            top: 7px;
+            right: 9px;
+            color: #999999;
+        }
+    }
+
+}
+
+#BrandFilterList {
+    max-height: 0px;
+    overflow-y: auto;
+}
+
+//#myInput:focus {outline: 3px solid #ddd;}
+
+.brand__filter {
+    position: relative;
+    display: inline-block;
+
+    &--input {
+        border-color: transparent;
+        border-radius: 5px;
+        background: #ffffff;
+        margin-right: 0px;
+        text-align: left;
+        padding: 5px;
+        padding-right: 30px;
+        color: black;
+        letter-spacing: 1px;
+    }
+
+    &--content {
+        background-color: #f6f6f6;
+        border: 1px solid #ddd;
+        z-index: 10;
+        border-radius: 5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        @include max-responsive($mnphone) {
+            right: auto;
+            left: 0;
+        }
+
+        a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            cursor: pointer;
+            display: block;
+
+            &:hover {
+                background-color: #ddd;
+            }
+        }
+    }
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: hide;
+}

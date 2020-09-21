@@ -1,0 +1,25 @@
+.language{
+    &__list{
+        display: flex;
+        // border-left: 1px solid $cl_blue;
+        margin: 25px 0px;
+        border-radius: 10px;
+        background: $cl_grey;
+    }
+    &__item{
+        padding: 5px;
+        padding-right: 5px;
+        border-right: 1px solid white;
+        @include max-responsive($mxtablet){
+            width: 50%;
+            text-align: center;
+        }
+        a{
+            font: 500 11px/1.2 $font_primary;
+            color: #6f6f6f;
+        }
+        &:last-child{
+            border: none;
+        }
+    }
+}

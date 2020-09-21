@@ -1,0 +1,15 @@
+.others {
+     &__bg {
+        background: url('../img/others/bg.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    &__front {
+        min-height: 80vh;
+        margin: 0px auto 0px;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+}

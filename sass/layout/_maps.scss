@@ -1,0 +1,42 @@
+.maps {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    &__ina {
+        margin-top: 75px;
+        position: relative;
+        @include max-responsive($mntablet){
+            width: 100%;
+            overflow-x: scroll;
+        }
+        img {
+            max-width: 100%;
+        @include max-responsive($mntablet){
+            max-width: none;
+            width: 1070px;
+        }
+        }
+    }
+    &__title {
+        color: $cl_red;
+        text-align: center;
+         @include max-responsive (1400px) {
+                margin-top: 50px;
+            }
+        &--big {
+            font: 400 3em/1 $font_pilkada;
+            @include max-responsive ($mxtablet) {
+                font: 400 2em/1 $font_pilkada;
+            }
+        }
+        &--small {
+            font: 400 2em/1 $font_pilkada;
+            @include max-responsive ($mxtablet) {
+                font: 400 1.5em/1 $font_pilkada;
+            }
+        }
+    }
+}

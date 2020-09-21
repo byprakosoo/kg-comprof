@@ -1,0 +1,32 @@
+.count {
+    &__text {
+        font: 400 14px/1 $font_child;
+        margin: 0;
+        padding: 0 10px;
+    }
+    &__wrap {
+        padding: 5px;
+        width: 0;
+        min-width: 10%;
+        float: left;
+        display: inline-block;
+        &:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+        &:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+    }
+    &--1 {
+        background: $cl_navy;
+    }
+    &--2 {
+        background: $cl_gold;
+    }
+    &--3 {
+        background: $cl_purple;
+    }
+    &--4 {
+        background: $cl_dgrey;
+    }
+}

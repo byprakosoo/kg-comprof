@@ -1,0 +1,149 @@
+.provinsi {
+    &__detail {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    &__profil {
+        //        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .mfp-close {
+            position: absolute;
+            background: $cl_lgrey;
+            color: #fff!important;
+            border-radius: 50px;
+            right: 10px;
+            top: 10px;
+            font-size: 25px;
+            width: 25px;
+            height: 25px;
+            line-height: 0;
+        }
+        &__wrap {
+            background: white;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 50px 0 0;
+            padding: 25px;
+            position: relative;
+        }
+        &__box {
+            display: flex;
+            flex-direction: row;
+            position: relative; //            margin: 50px 0 0;
+        }
+        .slick-slide{
+            display: flex !important;
+        }
+        &__item {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 0 20px;
+            max-width: 200px;
+        }
+        &__list {
+            margin: 20px 0;
+            border: 1px solid $cl_lgrey;
+            border-radius: 10px;
+            padding: 10px;
+            max-height: 200px;
+        }
+
+        &__nomor {
+            display: inline-block;
+            padding: 5px 10px;
+            position: relative;
+            transform: translateY(-10px);
+            border-radius: 0 0 10px 10px;
+            font: 400 18px/1 $font_child;
+            color: white;
+
+        }
+        &__calon {
+            margin: 10px 0;
+        }
+        &__vote {
+            display: inline-block; //            width: 100px;
+            color: white;
+            padding: 8px 20px;
+            margin: 0 auto;
+            background: $cl_red;
+            font: 400 20px/1 $font_child;
+            border-radius: 15px;
+            border: none;
+            transition: all .2s ease-in-out;
+            &:hover {
+                background: $cl_blue;
+            }
+        }
+        &__nama {
+            width: 60%;
+            font: 400 12px/15px $font_child;
+            color: #494949;
+            margin-left: 10px;
+            text-align: left;
+        }
+        &__count {
+            width: 100%;
+            display: inline-flex;
+            position: relative;
+            background: $cl_lgrey;
+            color: white;
+            margin-top: 35px;
+            //            padding: 10px 0;
+            border-radius: 10px;
+            list-style: none;
+            -webkit-padding-start: 0;
+
+        }
+    }
+    &__head {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+        min-width: 100px;
+        background: $cl_lgrey;
+        border: 7px solid white;
+        border-radius: 10px;
+        padding: 10px 15px;
+        color: white;
+    }
+    &__title {
+        text-transform: uppercase;
+        font: 400 1.7em/1 $font-child;
+        text-align: center;
+    }
+}
+
+#provinsi-nomor {
+    &-1 {
+        background: $cl_navy;
+    }
+    &-2 {
+        background: $cl_gold;
+    }
+    &-3 {
+        background: $cl_purple;
+    }
+    &-4 {
+        background: $cl_dgrey;
+    }
+}
+
+.mfp-content {
+    text-align: center;
+}
+
+.mfp-close--popup {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

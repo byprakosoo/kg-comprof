@@ -1,0 +1,44 @@
+.privacy {
+    &__wrapper{
+        margin-bottom: 100px;
+    }
+    &__title {
+        @include font-pack($family: $font_primary, $size: 17px, $weight: 700, $lh: false, $colour: $cl_blue);
+//        // text-transform: capitalize;
+        margin: 30px 0 10px;
+    }
+    &__list{
+        &--paragraph{
+            @include font-pack($family: $font_body, $size: 15px, $weight: 300, $lh: false, $colour: black);
+            line-height: 1.5;
+        }
+    }
+    &__paragraph{
+        @include font-pack($family: $font_body, $size: 15px, $weight: 300, $lh: false, $colour: black);
+        line-height: 1.5;
+        list-style-type: disc !important;
+        margin-left: 1em;
+        @include max-responsive($mntablet) {
+            margin-bottom: 10px;
+        }
+        &--intro{
+            margin-left: 0;
+        }
+    }
+    &__footer{
+        margin: 50px 0;
+        &__list{
+        }
+        &__item{
+            color: black;
+            margin-bottom: 5px;
+            line-height: 1.5;
+            a{
+                color: $cl_lblue;
+                &:hover{
+                    color: $cl_blue;
+                }
+            }
+        }
+    }
+}

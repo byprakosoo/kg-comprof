@@ -1,0 +1,24 @@
+.icon {
+    &-mouse {
+        font-size: 4em;
+        @include max-responsive (1400px) {
+            font-size: 3em;
+        }
+        &:hover {
+            color: white;
+        }
+    }
+    &-down {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        margin: 0 auto;
+        transition: all .2s ease-in-out;
+    }
+}

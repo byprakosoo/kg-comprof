@@ -1,0 +1,631 @@
+.tooltip {
+    display: block;
+    position: relative;
+    color: $cl_blue;
+
+    &--FUD {
+        transform: translateX(-55px);
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 100px;
+
+        &--top {
+            transform: translateX(-50px);
+            margin-top: 200px;
+        }
+
+        &--bottom {
+            margin-top: -360px;
+            transform: translateX(35px);
+
+            &.tooltip__wrapper--fud {
+                transform: translateX(-56px);
+            }
+        }
+
+        // &--fud{
+        //     transform: translateX(-175px)
+        // }
+    }
+
+    &__img {
+        &.liliek {
+            margin-right: 50px;
+        }
+
+        &.hilman-muchsin {
+            margin-left: -88px;
+        }
+
+        &.teddy {
+            margin-left: -56px;
+        }
+
+        &.radinal-maksum {
+            margin-left: -31px;
+        }
+        &.sunu {
+            margin-left: -40px;
+        }
+
+        &.ign-hardanto {
+            margin-top: -60px;
+        }
+
+        &.marcela {
+            margin-left: -285px;
+            width: 200px;
+        }
+
+        &.sigit {
+            bottom: 10px;
+            position: relative;
+        }
+
+        &.rusdi {
+            position: relative;
+        }
+
+        &.johanes {
+            margin-left: 5px;
+            position: relative;
+        }
+
+        &.cornelius {
+            margin-left: 5px;
+            left: -190px;
+            // transform: scale(1.17);
+            position: relative;
+        }
+
+        img {
+            filter: grayscale(100%);
+            transition: all .2s ease-in-out;
+        }
+
+        &.hari {
+            position: relative;
+            left: 45%;
+        }
+    }
+
+    &__item {
+        color: $cl_blue;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+
+        &--abs {
+            position: absolute;
+            bottom: -30px;
+            z-index: 1;
+        }
+
+        &--ign {
+            left: 20.2rem;
+            bottom: -22px;
+        }
+
+        &--sigit {
+            left: -1rem;
+        }
+        &--rusdi {
+            left: 2rem;
+        }
+        &--cornelius {
+            left: 15rem;
+        }
+        &--johanes {
+            left: 7rem;
+        }
+        &--marcela {
+            left: 33.5rem;
+            bottom: -19px;
+        }
+
+        &--thomas {
+            left: 45rem;
+            bottom: -43px;
+        }
+
+        &--andi {
+            left: 13rem;
+            bottom: -22px;
+        }
+
+        &--sunu {
+            left: 49%;
+            bottom: -15px;
+        }
+        &--ninok {
+            left: 12%;
+        }
+        &--radinal {
+            left: 30rem;
+            bottom: -21px;
+        }
+
+        &--teddy {
+            left: 39rem;
+            bottom: -24px;
+        }
+
+        &--hari {
+            left: 41rem;
+            bottom: -42px;        
+        }
+
+        &:hover {
+            img {
+                filter: none;
+                transform: scale(1.05);
+            }
+
+            .tooltip__content {
+                opacity: 1;
+            }
+        }
+
+        &.active {
+            img {
+                filter: grayscale(0%);
+                transform: scale(1.05);
+            }
+
+            .tooltip__content {
+                opacity: 1;
+            }
+        }
+
+        .ninok-leksono {
+            position: relative;
+        }
+
+        .rudi {
+            margin-left: 30px;
+            bottom: -12px;
+            position: relative;
+        }
+
+        .y-priyo {
+            margin-left: -6rem;
+            position: relative;
+        }
+
+        .andi-budiman {
+            position: relative;
+            left: -20px;
+        }
+
+        .johanes-widjaja {
+            left: 41%;
+            position: relative;
+            bottom: -9px;
+        }
+    }
+
+    &__line {
+        &::before {
+            content: '';
+            position: absolute;
+            border-top: 1px solid $cl_grey;
+            border-left: none;
+            z-index: -1;
+            top: 50%;
+            width: 78%;
+            height: 1px;
+        }
+
+        &--v {
+            &::before {
+                content: '';
+                position: absolute;
+                border-left: 1px solid $cl_grey;
+                border-top: none;
+                z-index: -1;
+                top: 50%;
+                height: 100%;
+                width: 1px;
+            }
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: $cl_lblue;
+        border-radius: 50%;
+        top: 43%;
+        z-index: 1;
+    }
+
+    &__content {
+        position: absolute;
+        top: 0;
+        text-align: center;
+        background: $cl_grey;
+        padding: 5px 10px;
+        opacity: 0;
+        transition: .2s ease-in-out;
+        z-index: 3;
+    }
+
+    &__heading {
+        pointer-events: none;
+        font-weight: 700;
+        font-size: 23px;
+
+    }
+
+    &__text {
+        pointer-events: none;
+        font-size: 15px;
+    }
+
+    &__ceo {
+        &--1 {
+            top: 20%;
+            left: -80%;
+
+            .tooltip__line {
+                &::before {
+                    left: 100%;
+                    z-index: 2
+                }
+            }
+
+            .tooltip__circle {
+                left: 175%;
+                z-index: 3
+            }
+        }
+
+        &--2 {
+            top: 40%;
+            right: -85%;
+
+            .tooltip__line {
+                &::before {
+                    right: 75%;
+                    z-index: 2
+                }
+            }
+
+            .tooltip__circle {
+                right: 150%;
+                z-index: 3
+            }
+        }
+    }
+
+    &__bud {
+        &--1 {
+            top: -32%;
+            left: 5%;
+            width: 280px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 19%;
+                    height: 243%;
+                    top: 100%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 17.5%;
+                top: 330%;
+            }
+        }
+
+        &--2 {
+            top: -52%;
+            left: -5%;
+            width: 200px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 37%;
+                    top: 0;
+                    height: 390%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 35%;
+                top: 390%;
+            }
+        }
+
+        &--3 {
+            top: -35%;
+            left: -75%;
+            width: 395px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 51%;
+                    top: 120%;
+                    width: 0;
+                    height: 232%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 50%;
+                top: 340%;
+            }
+        }
+
+        &--4 {
+            top: -33%;
+            left: -285px;
+            width: 486px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 54%;
+                    top: 55px;
+                    height: 275%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 53%;
+                top: 350%;
+            }
+        }
+
+        &--5 {
+            top: -40%;
+            left: 0%;
+            width: 276px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 34%;
+                    top: 55px;
+                    height: 245%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 32%;
+                top: 330%;
+            }
+        }
+
+        &--6 {
+            top: -76%;
+            left: -209px;
+            width: 380px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 54%;
+                    top: 55px;
+                    height: 500%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 53%;
+                top: 587%;
+            }
+        }
+
+        &--7 {
+            top: -33%;
+            left: 0%;
+            width: 300px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 34%;
+                    top: 0;
+                    height: 322%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 32%;
+                top: 318%;
+            }
+        }
+
+        &--8 {
+            top: -60%;
+            left: -68px;
+            width: 280px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 57%;
+                    top: 55px;
+                    height: 400%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 56%;
+                top: 473%;
+            }
+        }
+
+        &--9 {
+            top: -45%;
+            left: -87px;
+            width: 335px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 65%;
+                    top: 55px;
+                    height: 230%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 63.5%;
+                top: 298%;
+            }
+        }
+    }
+
+    &__fud {
+        &--1 {
+            top: -32%;
+            left: 8%;
+            width: 360px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 25%;
+                    height: 220%;
+                    top: 100%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 24%;
+                top: 306%;
+            }
+        }
+
+        &--2 {
+            top: -66%;
+            left: 9%;
+            width: 310px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 35%;
+                    top: 0;
+                    height: 382%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 33.5%;
+                top: 367%;
+            }
+        }
+
+        &--3 {
+            top: -35%;
+            left: -40%;
+            width: 395px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 51%;
+                    top: 92%;
+                    width: 0;
+                    height: 250%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 50%;
+                top: 340%;
+            }
+        }
+
+        &--4 {
+            top: -45%;
+            width: 326px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 54%;
+                    top: 55px;
+                    height: 350%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 53%;
+                top: 425%;
+            }
+        }
+
+        &--5 {
+            top: -33%;
+            left: 0%;
+            width: 320px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 34%;
+                    top: 55px;
+                    height: 203%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 32.7%;
+                top: 271%;
+            }
+        }
+
+        &--6 {
+            top: -50%;
+            left: -14%;
+            width: 280px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 62%;
+                    top: 55px;
+                    height: 300%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 60.7%;
+                top: 366%;
+            }
+        }
+
+        &--7 {
+            top: -33%;
+            left: 0%;
+            width: 306px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 34%;
+                    top: 0;
+                    height: 322%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 32.7%;
+                top: 318%;
+            }
+        }
+        &--8 {
+            top: -33%;
+            left: -50%;
+            width: 306px;
+
+            .tooltip__line--v {
+                &::before {
+                    left: 34%;
+                    top: 0;
+                    height: 322%;
+                }
+            }
+
+            .tooltip__circle {
+                left: 32.7%;
+                top: 318%;
+            }
+        }
+    }
+}

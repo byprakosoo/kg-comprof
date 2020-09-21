@@ -1,0 +1,38 @@
+<!-- s : header -->
+<header class="header">
+    <div class="container header__wrapper">
+        <div class="header__item header__item--left">
+            <a href="index.html" class="hdr__logo__link">
+                <img src="asset/img/kg-icon.png" alt="kg-icon.png" class="hdr__logo">
+            </a>
+        </div>
+        <div class="header__trigger">
+            <input type="checkbox" id="overlay-input" />
+            <label for="overlay-input" id="overlay-button"><span></span></label>
+        </div>
+        <div class="header__item header__item--right menu">
+            <ul class="menu__list">
+                {{#each menu}}
+                <li class="menu__list__parent{{#eq title compare=../page}} active{{/eq}}">
+                    <a href="{{link}}">{{title}}</a>
+                    {{#if submenu}}
+                    <ul class="menu__sub">
+                        {{#each submenu}}
+                        <li class="menu__child{{#eq title compare=../../page}} menu__child--active{{/eq}}">
+                            <a href="{{link}}">{{title}}</a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    {{/if}}
+                </li>
+                {{/each}}
+            </ul>
+            <ul class="language__list">
+                <li class="language__item"><a href="#">IND</a></li>
+                <li class="language__item"><a href="#">ENG</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="js-nav-offset"></div>
+<!-- e : header -->

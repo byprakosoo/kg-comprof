@@ -1,0 +1,41 @@
+.ftr_mob{
+	font-family: $font-child;
+    background: #005cae;
+    color: $cl_white;
+    margin-top: 20px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    @include min-responsive($mntablet){
+    	display: none;
+    }
+}
+.top_mob {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    z-index: 22;
+    &--show {
+      display: block;
+    }
+    &__link{
+        width: 36px;
+        height: 36px;
+        padding: 3px;
+        margin: 0;
+        line-height: 1;
+        font-size: 24px;
+        background: rgba(18, 91, 168, 0.71);
+        border-radius: 30px;
+        text-align: center;
+        vertical-align: middle;
+        border: 0px solid #000;
+        display: block;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        .icon{
+            color: $cl_white;
+        }
+    }
+}

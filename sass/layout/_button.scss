@@ -1,0 +1,176 @@
+.btn{
+	position: relative;
+	float: left;
+}
+.btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {
+    margin-left: -1px;
+}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.btn-group>.btn:last-child:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.btn-standart{
+	background: none;
+    outline: none;
+    border-radius: 20px;
+    font: 400 12px/24px $font_child;
+    color: #676767;
+    padding: 7px 15px!important;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    text-align: center;
+    &.active {
+	    background: #125ba8;
+	    color: #fff!important;
+	}
+}
+[data-toggle="buttons"]>.btn input[type="radio"], [data-toggle="buttons"]>.btn-group>.btn input[type="radio"], [data-toggle="buttons"]>.btn input[type="checkbox"], [data-toggle="buttons"]>.btn-group>.btn input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+.form-control{
+	height: auto;
+	padding: 10px;
+	border: none;
+}
+.follow-box, .chit-box, .kirim-tulisan{
+	font-family: $font_child;
+	font-size: 10px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	padding: 25px 0 5px;
+	span{
+		color: #fff;
+		font-size: 10px;
+    	font-weight: 400;
+		background: #57ad68;
+	    border-radius: 17px;
+		padding: 8px 15px;
+		-webkit-transition: 0.2s ease-out;
+    	transition: 0.2s ease-out;
+	}
+	a{
+		color: $cl_white;
+		font-size: 10px;
+    	font-weight: 400;
+		&:hover span{
+			background: #458b53;
+		}
+	}
+}
+.followed-box{
+	span{
+		color: $cl_black;
+		background: $cl_white;
+    	padding: 8px 15px;
+	}
+	a{
+		&:hover span{
+			background: $cl_white;
+		}
+	}
+}
+.chit-box{
+	span{
+		background: #3982ce;
+	}
+	a:hover span{
+		background: #204f81;
+	}
+}
+.kirim-tulisan{
+	text-align: left;
+    padding: 15px 0 10px;
+    span{
+    	background: #1d61ab;
+    }
+    a{
+    	&:hover span{
+    		background: #154c88;
+    	}
+    }
+    &--link{
+		float: right;
+	    padding-top: 20px;
+    }
+}
+.load-more, .dashboard-write--simpan, .dashboard-write--tayang, .dashboard-setting--simpan, .dashboard-setting--batal, .dashboard-setting--edit, .dashboard-setting--verifikasi, .btn-register, .btn-obrolan, .obrolan__edit, .save, .send, .response-btn{
+	font: 400 12px/16px $font_child;
+	display: inline-block;
+	@include border_radius(20px);
+	padding: 5px 15px 5px 15px;
+    border: 1px solid #d0d0d0;
+    color: #7d7d7d;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+	&:hover, &:focus {
+	    border: 1px solid $cl_blue;
+	    color: $cl_blue;
+	}
+	.icon-angle-right{
+		position: relative;
+	    top: 2px;
+	    left: 5px;
+	}
+}
+.close--bio, .close--event{
+	display: none;
+}
+.obrolan__edit{
+    margin-top: 2px;
+    padding: 0 15px 7px 15px;
+}
+.edit-foto, .edit-foto-pic{
+	position: absolute;
+    bottom: 5px;
+    width: 100%;
+    z-index: 1;
+	font: 400 12px/16px $font_child;
+	display: none;
+    a{
+    	color: $cl_white;
+    	&:hover span{
+			background: $cl_white;
+			color: $cl_black;
+    	}
+    }
+    span{
+    	display: inline-block;
+	    border: 1px solid #fff;
+	    padding: 5px 10px;
+	    margin: 10px;
+	    @include border_radius(20px);
+    }
+}
+.edit-foto{
+	width: auto;
+    right: 10px;
+}
+.report-btn{
+	font: 500 14px/22px $font_child;
+	display: inline-block;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 4px 15px 4px;
+    color: #bebebe;
+    text-align: center;
+    margin: 10px 0 0 10px;
+    width: auto;
+    background: transparent;
+    border: 1px solid transparent;
+    &:hover{
+		background: #5fa0da;
+		color: white;
+    }
+}

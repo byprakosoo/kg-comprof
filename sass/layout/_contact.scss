@@ -1,0 +1,111 @@
+.contact {
+    padding: 125px 0 100px;
+    &__bg{
+        min-height: 89vh;
+    }
+    &__info {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        &__title {
+            @include font-pack($family: $font_body, $size: 14px, $weight: 700, $lh: false, $colour: black);
+            margin: 10px 0;
+        }
+        &__text {
+            @include font-pack($family: $font_body, $size: 12px, $weight: 300, $lh: false, $colour: black);
+            margin: 5px 0;
+            a {
+                color: $cl_blue;
+            }
+        }
+    }
+    &__desc {
+        @include font-pack($family: $font_body, $size: 16px, $weight: 300, $lh: false, $colour: black);
+        line-height: 1.5;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+
+        //        padding-left: 100px;
+        input {
+            border: 1px solid $cl_grey;
+            margin-right: 0px;
+            font-family: $font_primary;
+            text-align: left;
+            padding: 15px;
+            padding-left: 10px;
+            color: $cl_dgrey;
+            letter-spacing: 2px;
+            margin: 5px 0;
+            &::placeholder {
+                color: $cl_dgrey;
+                letter-spacing: 2px;
+            }
+        }
+        textarea {
+            height: 200px;
+            resize: none;
+            border: 1px solid $cl_grey;
+            margin-right: 0px;
+            font-family: $font_primary;
+            text-align: left;
+            padding: 15px;
+            padding-left: 10px;
+            color: $cl_dgrey;
+            letter-spacing: 2px;
+            margin: 5px 0;
+            &::placeholder {
+                color: $cl_dgrey;
+                letter-spacing: 2px;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    &__accordion {
+        &__text {
+            @include font-pack($family: $font_body, $size: 11px, $weight: 300, $lh: false, $colour: black);
+            padding-left: 20px;
+            text-align: left;
+            position: relative;
+            margin: 10px 0 20px;
+            &::before {
+                content: '*';
+                position: absolute;
+                top: 2px;
+                left: 5px;
+            }
+        }
+    }
+    &__btn {
+        // display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+    &__panel{
+        display: flex;
+        margin: 50px 0;
+        flex-wrap: wrap;
+    }
+    &__item{
+        flex: 1 1 50%;
+    }
+    .panel{
+        &__side{
+            &__img{
+                @include max-responsive($mntablet){
+                    text-align: center;
+                }
+                img{
+                    @include max-responsive($mntablet){
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}

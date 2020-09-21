@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head page="Ruang Media"}}
+
+<body>
+
+    {{>header page="Ruang Media"}}
+    <!-- s:panel -->
+    <div id="panel" class="panel">
+        <div class="hero">
+            <img src="asset/img/panel-head.png" alt="panel-head.png" class="hero__ornament">
+            <h1 class="hero__title">Ruang Media</h1>
+        </div>
+        <div class="container clearfix panel__overlay">
+            <div class="panel__wrapper">
+                <div class="panel__title">
+                    <h1 class="panel__title__text">Berita</h1>
+                </div>
+            </div>
+        </div>
+        <!--read content-->
+        {{> read_content}}
+        <!--read content-->
+        <div class="container read__recommendation">
+            <h3>Berita Lainnya</h3>
+            <div class="card card--inner">
+                <ul class="card__list">
+                    <li class="card__item">
+                        <a href="read.html" class="card__link">
+                            <div class="card__img"><img src="asset/img/ruang-media.jpg" alt="ruang-media.jpg"></div>
+                            <p class="card__date">6/2/2020</p>
+                            <p class="card__title">Ut perspiciatis unde omnis
+                                istenatus error sit</p>
+                        </a>
+                    </li>
+                    <li class="card__item">
+                        <a href="read.html" class="card__link">
+                            <div class="card__img"><img src="asset/img/ruang-media.jpg" alt="ruang-media.jpg"></div>
+                            <p class="card__date">6/2/2020</p>
+                            <p class="card__title">Ut perspiciatis unde omnis
+                                istenatus error sit</p>
+                        </a>
+                    </li>
+                    <li class="card__item">
+                        <a href="read.html" class="card__link">
+                            <div class="card__img"><img src="asset/img/ruang-media.jpg" alt="ruang-media.jpg"></div>
+                            <p class="card__date">6/2/2020</p>
+                            <p class="card__title">Ut perspiciatis unde omnis
+                                istenatus error sit</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- e:panel -->
+    {{>footer}} {{>script page="read"}}
+</body>
+
+</html>

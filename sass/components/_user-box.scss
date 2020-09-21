@@ -1,0 +1,94 @@
+.user-box{
+	font-family: $font_child;
+    padding-top: 10px;
+	padding-left: 55px;
+	display: inline-block;
+	color: #1d61ab;
+	a{
+		color: #1d61ab;
+		display: block;
+		font-size: 13px;
+    	font-weight: 500;
+	}
+	.title{
+		font-size: 14px;
+	}
+	.user-name{
+		height: 18px;
+    	overflow: hidden;
+	}
+}
+.headline .user-name{
+	font-weight: 400;
+}
+.headline .user-box{
+	padding-top: 20px;
+}
+.date-box{
+	font-size: 11px;
+	font-weight: 400;
+	font-family: $font_child;
+	color: #9E9E9E;
+    font-style: normal;
+	span {
+	    :before{
+			content: "|";
+	    	padding: 0 5px;
+		}
+		.timeago{
+		    cursor: text;
+			border-bottom: none;
+		}
+	}
+}
+.followers-box{
+	font-size: 15px;
+	font-weight: 300;
+	font-family: $font_child;
+	color: #b4b4b4;
+}
+.title-box{
+    font-size: 11px;
+    font-weight: 400;
+    font-family: $font_child;
+    color: #9E9E9E;
+    font-style: normal;
+    max-height: 44px;
+    overflow: hidden;
+}
+.read-box{
+	font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    color: #b4b4b4;
+    &--count__item{
+    	display: inline-block;
+	    float: left;
+	    .icon{
+	    	margin-top: 1px;
+		    margin-right: 8px;
+		    margin-left: 0px;
+	    }
+	    .icon-dibaca{
+	   		color: #d1d1d1;
+	    }
+    }
+}
+.join{
+	font-weight: 600;
+}
+.following-box{
+	text-align: center;
+	font-family: $font_child;
+	letter-spacing: 1px;
+	span{
+		display: block;
+		font-weight: 500;
+	}
+	.icon-lapor-akun{
+		font-size: 20px;
+		&:hover{
+			color: $cl_red !important;
+		}
+	}
+}
